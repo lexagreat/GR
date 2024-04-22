@@ -1,0 +1,144 @@
+.blog-page {
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+   }
+
+   &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .swiper-tabs {
+         margin-top: 0;
+      }
+   }
+
+   &__title {
+   }
+
+   &__main {
+   }
+
+   &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+   }
+
+   &__pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__more {
+      color: white;
+      background-color: #151515;
+      height: 54px;
+      font-size: 20px;
+      line-height: calc(30 / 20);
+   }
+   @media (max-width: 1024px) {
+      &__content {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 14px;
+      }
+   }
+   @media (max-width: 568px) {
+      &__wrapper {
+         gap: 20px;
+      }
+      &__header {
+         gap: 15px;
+      }
+      &__content {
+         grid-template-columns: 1fr;
+      }
+   }
+}
+.blog-card {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   border-radius: 25px;
+   font-family: "Stolzl";
+   overflow: hidden;
+   border: 1px solid #dcdcdc;
+   &__image {
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 24px;
+      padding-top: 0;
+   }
+   &__tags {
+      display: flex;
+      gap: 8px;
+   }
+   &__tag {
+      background-color: #151515;
+      color: #ffffff;
+      cursor: default;
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.8px;
+      color: #151515;
+   }
+
+   &__description {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #6c6c6c;
+   }
+
+   &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__date {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: #9d9d9d;
+   }
+
+   &__link {
+      background-color: #e8ecef;
+      color: #313234;
+   }
+   @media (max-width: 568px) {
+      &__main {
+         padding: 20px;
+         padding-top: 0;
+      }
+      &__tag {
+         font-size: calc(12 / 375 * 100vw);
+         padding-left: calc(16 / 375 * 100vw);
+         padding-right: calc(16 / 375 * 100vw);
+         height: calc(30 / 375 * 100vw);
+      }
+      &__title {
+         font-size: calc(18 / 375 * 100vw);
+      }
+      &__description {
+         font-size: calc(14 / 375 * 100vw);
+      }
+      &__date {
+         font-size: calc(12 / 375 * 100vw);
+      }
+   }
+}

@@ -1,0 +1,30 @@
+.breadcrumbs {
+   margin-top: 28px;
+
+   margin-bottom: 20px;
+   &__list {
+      display: flex;
+      gap: 3px;
+      li:last-child {
+         a {
+            pointer-events: none;
+            color: #6c6c6c;
+            &::after {
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__link {
+      display: flex;
+      gap: 3px;
+      font-family: "TT Norms Pro";
+      font-size: 14px;
+      line-height: 21px;
+      color: #151515;
+      &::after {
+         content: "-";
+      }
+   }
+}

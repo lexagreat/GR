@@ -1,0 +1,60 @@
+.underline
+  position: relative
+  max-width: fit-content
+
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    width: 100%
+    top: calc(100% - 3px)
+    height: 1px
+    transition: 0.3s
+    background-color: $white
+    transform: scale(0)
+    transform-origin: left
+
+  &:hover
+    &::after
+      transform: scale(1)
+
+.btn-popup
+  align-self: start
+  font-size: 20px
+  font-weight: 500
+  line-height: 160%
+  color: $dark
+  border-radius: 47px
+  padding: 16px 36px
+  border: none
+  outline: none
+
+.section-title
+  font-family: $stolzl
+  font-size: 48px
+  font-weight: 400
+  line-height: 120%
+
+@media ( max-width: 1200px )
+  .btn-popup
+    font-size: calc(16px / 768px * 100vw)
+    padding: calc(10px / 768px * 100vw) calc(24px / 768px * 100vw)
+
+  .section-title
+    font-size: calc(24px / 768px * 100vw)
+
+@media ( max-width: 768px )
+  .btn-popup
+    font-size: calc(16px / 576px * 100vw)
+    padding: calc(10px / 576px * 100vw) calc(24px / 768px * 100vw)
+
+  .section-title
+    font-size: calc(24px / 576px * 100vw)
+
+@media ( max-width: 576px )
+  .btn-popup
+    font-size: 16px
+    padding: 10px 24px
+
+  .section-title
+    font-size: 24px

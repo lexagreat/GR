@@ -1,0 +1,58 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+   @font-face {
+      font-family: quote($font-name);
+      src: url(#{$path}.woff) format("woff"),
+         url(#{$path}.woff2) format("woff2"),
+         url(#{$path}.ttf) format("truetype");
+      font-weight: $weight;
+      font-style: $style;
+   }
+}
+@include font-face(
+   $font-name: "TT Norms Pro",
+   $path: "../fonts/TTNormsPro-Regular",
+   $weight: 400
+);
+@include font-face(
+   $font-name: "TT Norms Pro",
+   $path: "../fonts/TTNormsPro-Medium",
+   $weight: 500
+);
+@include font-face(
+   $font-name: "TT Norms Pro",
+   $path: "../fonts/TTNormsPro-Bold",
+   $weight: 700
+);
+
+@include font-face(
+   $font-name: "Stolzl Book",
+   $path: "../fonts/Stolzl-Book",
+   $weight: 400
+);
+@include font-face(
+   $font-name: "Stolzl",
+   $path: "../fonts/Stolzl-Regular",
+   $weight: 400
+);
+
+@include font-face(
+   $font-name: "Inter",
+   $path: "../fonts/Inter-Regular",
+   $weight: 400
+);
+@include font-face(
+   $font-name: "Inter",
+   $path: "../fonts/Inter-Medium",
+   $weight: 500
+);
+@include font-face(
+   $font-name: "Inter",
+   $path: "../fonts/Inter-Bold",
+   $weight: 700
+);
+
+@include font-face(
+   $font-name: "Plus Jakarta Sans",
+   $path: "../fonts/PlusJakartaSans/PlusJakartaSans-Medium",
+   $weight: 500
+);

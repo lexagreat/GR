@@ -1,0 +1,83 @@
+.swiper-tabs
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 40px
+
+  &__container
+    margin-left: 0
+    margin-right: 0
+    max-width: 1200px
+
+  &__slide
+
+  &__btn-next
+    margin-left: 12px
+    width: 28px
+    height: 28px
+    position: relative
+    right: 0
+    top: 0
+    margin-top: 0
+
+  &__btn-next::after
+    content: '' !important
+
+  &__icon
+    flex: 0 0 28px
+    fill: $dark
+
+  .swiper__tab
+    background-color: transparent
+    border: 1px solid #DCDCDC
+    display: flex
+    justify-content: center
+    gap: 10px
+    padding: 12px 0px
+    width: 100%
+    border-radius: 56px
+
+    &.tab-active
+      background-color: $dark
+      transition: 0.3s
+
+      .swiper__tab-icon
+        fill: $white
+
+        &--yandex
+          fill: $dark
+
+      .swiper__tab-text
+        color: $white
+
+    &-icon
+      flex: 0 0 21px
+      width: 21px
+      height: 21px
+      margin-left: 24px
+      fill: $dark
+
+      &--yandex
+        fill: $white
+
+    &-text
+      font-size: 14px
+      font-weight: 400
+      line-height: 150%
+      margin-right: 24px
+      fill: $black
+
+@media ( max-width: 768px )
+  .swiper-tabs
+    margin-top: 20px
+
+    &__container
+      overflow: visible
+    
+    &__wrapper
+      transform: translate3d(0, 0, 0, 0)
+      flex-wrap: wrap
+      gap: 8px
+
+    &__slide
+      width: auto !important

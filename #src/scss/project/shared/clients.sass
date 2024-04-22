@@ -1,0 +1,206 @@
+.clients
+  background-color: $dark
+  padding: 50px 0
+  margin-top: 100px
+  overflow: hidden
+
+  &__container
+
+  &__head
+
+  &__title
+    font-family: $stolzl
+    color: $white
+    align-items: center
+
+  &__title-icon
+    display: inline-block
+    margin-left: 10px
+    margin-right: 10px
+    align-items: start
+    width: 40px
+    height: 40px
+    vertical-align: center
+
+    svg
+      width: 100%
+      height: 100%
+      fill: $blue
+
+  &__swiper-container
+    width: 1515px
+    margin-top: 38px
+
+  &__swiper
+
+  &__swiper-wrapper
+
+  &__swiper-slide
+    display: flex
+    border-radius: 20px
+    background-color: $white
+    height: auto !important
+
+  &__swiper-slide-container
+    padding: 14px
+    display: flex
+    // height: 100%
+    gap: 36px
+
+  &__swiper-img
+    position: relative
+    border-radius: 10px
+
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      box-shadow: 0px 0px 80.8px 0px #000000EB inset
+      z-index: 2
+      border-radius: 20px
+
+    img
+      border-radius: 10px
+      width: 100%
+      height: 100%
+      display: block
+      z-index: 1
+      object-fit: cover
+
+  &__content
+    max-width: 302px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+  &__content-head
+    display: flex
+    flex-direction: column
+
+  &__content-title
+    font-family: $stolzl
+    font-size: 20px
+    font-weight: 400
+    line-height: 150%
+
+  &__content-subtitle
+    font-size: 14px
+    font-weight: 400
+    line-height: 130%
+    color: #9D9D9D
+
+  &__content-grade
+    display: flex
+    gap: 7px
+
+  &__content-grade-item
+    margin-top: 10px
+    svg
+      fill: $blue
+
+  &__content-text
+    margin-top: 10px
+    font-size: 16px
+    font-weight: 400
+    line-height: 150%
+    flex-grow: 1
+
+  &__content-date
+    font-size: 14px
+    line-height: 130%
+    color: #9D9D9D
+
+  &__nav
+    margin-top: 38px
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .swiper-pagination-bullet
+    background: transparent
+    border: 1px solid $white
+    opacity: 1
+
+  .swiper-pagination-bullet-active
+    background-color: $blue
+    border: 1px solid $blue
+    opacity: 1
+
+
+  &__nav-pagination
+    position: relative
+    top: 0 !important
+    left: 0 !important
+    right: 0 !important
+    bottom: 0 !important
+    width: unset !important
+
+  &__pagination
+    position: relative
+    display: flex
+    gap: 11px
+
+  &__nav-prev, &__nav-next
+    align-items: center
+    position: relative
+    display: flex
+    margin: 0
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    border: 1px solid $white
+    border-radius: 50px
+    width: 65px
+    height: 49px
+    flex: 0 0 65px
+    padding: 12px 20px
+    transition: 0.3s
+
+    &::after
+      content: '' !important
+
+    & svg
+      width: 100%
+      height: 100%
+      fill: $white
+
+  &__nav-next
+
+    & svg
+      transform: rotate(180deg)
+
+@media (max-width: 1200px)
+  .clients
+    &__title-icon
+      width: 30px
+      height: 30px
+      vertical-align: center
+    &__swiper-img
+      flex: 0 0 123px
+    &__content
+      max-width: 100%
+
+    
+
+    &__swiper-container
+      width: initial
+
+@media (max-width: 768px)
+  .clients
+    &__title-icon
+      width: 20px
+      height: 20px
+
+@media (max-width: 576px)
+  .clients
+    &__swiper-slide-container
+      gap: 20px
+
+    &__content-text
+      margin-top: 0
+      font-size: 14px

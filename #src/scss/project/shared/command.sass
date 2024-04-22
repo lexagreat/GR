@@ -1,0 +1,171 @@
+.command
+  margin-top: 100px
+
+  &__head
+    display: flex
+    justify-content: space-between
+
+  &__title
+
+  &__pagination
+    position: relative
+    display: flex
+    align-items: center
+    gap: 10px
+
+  &__pagination-prev, &__pagination-next
+    align-items: center
+    position: relative
+    display: flex
+    margin: 0
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    border: 1px solid $dark
+    border-radius: 50px
+    width: 65px
+    height: 49px
+    flex: 0 0 65px
+    padding: 12px 20px
+    transition: 0.3s
+    
+    &::after
+      content: '' !important
+
+    & svg
+      width: 100%
+      height: 100%
+      fill: $dark
+
+
+  &__pagination-next
+
+    & svg
+      transform: rotate(180deg)
+
+  &__swiper
+    margin-top: 40px
+
+  &__swiper-wrapper
+
+  &__swiper-slide-container
+    padding-bottom: 40px
+    border: 1px solid #DDDDDD
+    border-radius: 20px
+    display: flex
+    flex-direction: column
+
+  &__swiper-slide
+
+  &__content
+    position: relative
+
+  &__content-img
+    position: relative
+    border-radius: 20px
+
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      box-shadow: inset 0 0 161px 0 rgba(0, 0, 0, 0.92)
+      z-index: 2
+      border-radius: 20px
+
+
+    img
+      width: 100%
+      height: 100%
+      display: block
+      border-radius: 20px
+      z-index: 1
+      object-fit: cover
+      box-shadow: inset 0 0 161px 0 rgba(0, 0, 0, 0.92)
+
+  &__content-cards
+    display: flex
+    gap: 5px
+    position: absolute
+    bottom: 24px
+    left: 24px
+    z-index: 3
+
+  &__content-cards-item
+    width: 32px
+    height: 32px
+
+    svg
+      width: 100%
+      height: 100%
+
+  &__text
+    padding-top: 26px
+    padding-left: 24px
+    padding-right: 10px
+    display: flex
+    flex-direction: column
+
+
+  &__text-head
+    display: flex
+    gap: 13px
+    align-items: center
+
+  &__text-title
+    font-family: $stolzl
+    font-weight: 400
+    font-size: 20px
+    line-height: 150%
+
+  &__text-icon
+    // display: flex
+    width: 18px
+    height: 18px
+
+    &--check
+      fill: $white
+
+    &--border
+      fill: $blue
+
+  &__text-list
+    display: flex
+    flex-direction: column
+    margin-top: 8px
+
+  &__text-list-item
+    font-size: 16px
+    font-weight: 400
+    line-height: 150%
+
+@media (max-width: 576px)
+  .command
+    &__head
+
+    &__pagination-prev, &__pagination-next
+      height: 50px
+      padding: 10px
+    &__content-cards
+      bottom: 13px
+      left: 15px
+    &__content-cards-item
+      width: 25px
+      height: 25px
+    &__text
+      padding-left: 20px
+
+    &__text-head
+
+    &__text-title
+      font-size: 16px
+
+    &__text-icon
+      width: 14px
+      height: 14px
+
+    &__text-list-item
+      font-size: 12px

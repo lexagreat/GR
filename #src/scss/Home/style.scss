@@ -1,0 +1,55 @@
+.swiper-tabs {
+   &__slide {
+      max-width: fit-content;
+   }
+}
+.swiper {
+   &__tab {
+      cursor: pointer;
+      .swiper__tab-icon {
+         margin-left: 0;
+      }
+      .swiper__tab-text {
+         margin-right: 0;
+      }
+   }
+}
+.swiper-tabs__slide {
+   display: flex;
+}
+.swiper-tabs .swiper__tab {
+   padding-left: 24px;
+   padding-right: 24px;
+}
+.hero {
+   padding-top: 37px;
+
+   @media (max-width: 1200px) {
+      padding-top: calc(22px / 768px * 100vw);
+   }
+
+   @media (max-width: 768px) {
+      padding-top: calc(22px / 576px * 100vw);
+   }
+
+   @media (max-width: 576px) {
+      padding-top: 22px;
+   }
+}
+.command__swiper-slide-container {
+   height: 100%;
+   padding-bottom: 15px;
+}
+.command__swiper-slide {
+   height: auto;
+}
+.command__content-cards-item {
+   border-radius: 8px;
+   overflow: hidden;
+}
+.cards__card-text {
+   max-width: unset;
+}
+.cards__card-price.small {
+   font-size: 14px;
+}

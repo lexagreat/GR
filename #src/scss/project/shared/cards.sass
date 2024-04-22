@@ -1,0 +1,347 @@
+.cards
+  margin-top: 100px
+
+  &__subtitle
+    font-size: 24px
+    font-weight: 400
+    line-height: 140%
+    color: $black
+    margin-top: 34px
+
+  &__content
+    display: flex
+    flex-direction: column
+    gap: 37px
+
+  &__swiper
+    margin-left: 0
+    margin-right: 0
+
+    &-wrapper
+    
+    &-slide
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 24px
+
+  &__column
+    display: flex
+    flex-direction: column
+    gap: 24px
+
+  &__card
+    display: flex
+    flex-direction: column
+    gap: 34px
+    padding: 30px 40px
+    border-radius: 20px
+    background-color: #F5F5F5
+    transition: 0.3s
+
+    &:hover
+      background-color: $blue
+
+      .cards__card-top
+
+      .cards__card-title
+        color: $white
+
+      .cards__card-icon-top
+        fill: $white
+
+      .cards__card-text
+        color: $white
+        opacity: 0.57
+
+      .cards-list__item-plus
+        fill: $white
+
+      .cards-list__item-text
+        color: $white
+        opacity: 0.57
+
+      .cards__card-price
+        color: $white
+
+      .cards__card-price-text
+        color: $white
+
+      .cards__card-icon-container--bottom
+        background-color: $white
+
+      .cards__card-icon-bottom
+        fill: $dark
+
+
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 12px
+
+    &-title
+      max-width: 460px
+      font-family: $stolzl
+      font-size: 30px
+      font-weight: 400
+      line-height: 150%
+      color: #313234
+
+    &-icon-container--top
+      flex: 0 0 40px
+      width: 40px
+      height: 40px
+
+    &-icon-top
+      width: 100%
+      height: 100%
+      fill: $dark
+
+    &-text
+      max-width: 460px
+      font-size: 20px
+      font-weight: 400
+      line-height: 150%
+      color: #858585
+
+    &-bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      gap: 12px
+
+    &-icon-container--bottom
+      flex: 0 0 54px
+      width: 54px
+      height: 38px
+      background-color: $dark
+      border-radius: 50px
+      display: flex
+      justify-content: center
+      align-items: center
+
+
+    &-icon-bottom
+      fill: $white
+
+    &-price
+      font-family: $stolzl
+      font-size: 22px
+      font-weight: 400
+      line-height: 150%
+      color: #313234
+
+    &-price-text
+      font-family: $stolzl
+      font-size: 14px
+      font-weight: 400
+      line-height: 150%
+      color: #313234
+
+  &-list
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    &__item
+      display: flex
+      gap: 5px
+      align-items: center
+
+    &__item-plus
+      fill: #858585
+
+
+    &__item-text
+      font-size: 20px
+      font-weight: 400
+      line-height: 150%
+      color: #858585
+
+@media ( max-width: 1200px )
+  .cards
+    margin-top: calc(50px / 768px * 100vw)
+
+    &__subtitle
+      font-size: calc(14px / 768px * 100vw)
+      margin-top: calc(20px / 768px * 100vw)
+
+    &__content
+      gap: calc(20px / 768px * 100vw)
+
+    &__swiper
+
+      &-wrapper
+      
+      &-slide
+        grid-template-columns: 1fr
+        gap: calc(10px / 768px * 100vw)
+
+    &__column
+      gap: calc(10px / 768px * 100vw)
+
+    &__card
+      gap: calc(20px / 768px * 100vw)
+      padding: calc(24px / 768px * 100vw)
+
+      &-top
+        gap: calc(12px / 768px * 100vw)
+
+      &-title
+        max-width: 100%
+        font-size: calc(20px / 768px * 100vw)
+
+      &-icon-container--top
+        flex: 0 0 calc(30px / 768px * 100vw)
+        width: calc(30px / 768px * 100vw)
+        height: calc(30px / 768px * 100vw)
+
+      &-text
+        max-width: 100%
+        font-size: calc(14px / 768px * 100vw)
+
+      &-bottom
+        gap: calc(12px / 768px * 100vw)
+
+      &-icon-container--bottom
+        background-color: $white
+        flex: 0 0 calc(52px / 768px * 100vw)
+        width: calc(52px / 768px * 100vw)
+        height: calc(36px / 768px * 100vw)
+
+      &-icon-bottom
+        fill: $dark
+
+      &-price
+        font-size: calc(16px / 768px * 100vw)
+
+      &-price-text
+        font-size: calc(11px / 768px * 100vw)
+
+    &-list
+      gap: calc(10px / 768px * 100vw)
+
+      &__item-text
+        font-size: calc(14px / 768px * 100vw)
+
+@media ( max-width: 768px )
+  .cards
+    margin-top: calc(50px / 768px * 100vw)
+
+    &__subtitle
+      font-size: calc(14px / 768px * 100vw)
+      margin-top: calc(20px / 768px * 100vw)
+
+    &__content
+      gap: calc(20px / 768px * 100vw)
+
+    &__swiper
+
+      &-wrapper
+      
+      &-slide
+        grid-template-columns: 1fr
+        gap: calc(10px / 576px * 100vw)
+
+    &__column
+      gap: calc(10px / 576px * 100vw)
+
+    &__card
+      gap: calc(20px / 576px * 100vw)
+      padding: calc(24px / 576px * 100vw)
+
+      &-top
+        gap: calc(12px / 576px * 100vw)
+
+      &-title
+        font-size: calc(20px / 576px * 100vw)
+
+      &-icon-container--top
+        flex: 0 0 calc(30px / 768px * 100vw)
+        width: calc(30px / 576px * 100vw)
+        height: calc(30px / 576px * 100vw)
+
+      &-text
+        font-size: calc(14px / 576px * 100vw)
+
+      &-bottom
+        gap: calc(12px / 576px * 100vw)
+
+      &-icon-container--bottom
+        flex: 0 0 calc(52px / 576px * 100vw)
+        width: calc(52px / 576px * 100vw)
+        height: calc(36px / 576px * 100vw)
+
+      &-price
+        font-size: calc(16px / 576px * 100vw)
+
+      &-price-text
+        font-size: calc(11px / 576px * 100vw)
+
+    &-list
+      gap: calc(10px / 576px * 100vw)
+
+    &__item-text
+      font-size: calc(14px / 576px * 100vw)
+
+@media ( max-width: 576px )
+  .cards
+    margin-top: 50px
+
+    &__subtitle
+      font-size: 14px
+      margin-top: 20px
+
+    &__content
+      gap: 20px
+
+    &__swiper
+
+      &-wrapper
+      
+      &-slide
+        grid-template-columns: 1fr
+        gap: 10px
+
+    &__column
+      gap: 10px
+
+    &__card
+      gap: 20px
+      padding: 24px
+
+      &-top
+        gap: 12px
+
+      &-title
+        max-width: 240px
+        font-size: 20px
+
+      &-icon-container--top
+        flex: 0 0 30px
+        width: 30px
+        height: 30px
+
+      &-text
+        max-width: 240px
+        font-size: 14px
+
+      &-bottom
+        gap: 12px
+
+      &-icon-container--bottom
+        flex: 0 0 52px
+        width: 52px
+        height: 36px
+
+      &-price
+        font-size: 16px
+
+      &-price-text
+        font-size: 11px
+
+    &-list
+      gap: 10px
+
+      &__item-text
+        font-size: 14px

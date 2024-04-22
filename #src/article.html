@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Статья",
+})
+
+<body>
+   @@include('html/header.html', {})
+   <main class="main">
+      <div class="breadcrumbs">
+         <div class="container">
+            <ul class="breadcrumbs__list">
+               <li>
+                  <a href="index.html" class="breadcrumbs__link">Главная</a>
+               </li>
+               <li>
+                  <a href="#" class="breadcrumbs__link">Публикации</a>
+               </li>
+               <li>
+                  <a href="#" class="breadcrumbs__link">Основы HTML и CSS</a>
+               </li>
+            </ul>
+
+         </div>
+      </div>
+      <section class="article-page">
+         <div class="container">
+            <div class="article-page__wrapper">
+               <div class="article-page__content"></div>
+               <aside class="article-page__aside"></aside>
+            </div>
+         </div>
+      </section>
+   </main>
+   @@include('html/footer.html', {})
+   @@include('html/scripts.html', {})
+</body>
+
+</html>
