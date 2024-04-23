@@ -53,3 +53,24 @@
 .cards__card-price.small {
    font-size: 14px;
 }
+.footer__form-submit {
+   background-color: white;
+}
+.cards__card {
+   @media (hover: hover) {
+      &:hover {
+         .cards__card-top {
+            svg path {
+               fill: white;
+            }
+         }
+      }
+   }
+   &:active {
+      .cards__card-top {
+         svg path {
+            fill: white;
+         }
+      }
+   }
+}

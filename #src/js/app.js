@@ -46,7 +46,10 @@ function headerWork() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+   // header
    headerWork();
+   // article
+   articlePageNavigation();
 });
 
 // Popup
@@ -240,7 +243,8 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    const servicesTabs = document.getElementsByClassName("swiper__tab");
-   const serviceTabsSlides = document.getElementById("service-swiper").children;
+   const serviceTabsSlides =
+      document.getElementById("service-swiper")?.children;
 
    const servicesTabsAttrs = [];
 
@@ -258,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
    }
 
-   console.log(servicesTabsAttrs);
+   // console.log(servicesTabsAttrs);
 });
 
 // mask
@@ -267,4 +271,72 @@ const maskOptions = {
 };
 if (document.getElementById("phoneInput")) {
    const mask = IMask(document.getElementById("phoneInput"), maskOptions);
+}
+
+//article page
+
+function articlePageNavigation() {
+   const links = document.querySelectorAll(".article-navigation__item");
+   const sections = document.querySelectorAll(".article-section");
+   if (!links.length) {
+      return;
+   }
+   links.forEach((link) => {
+      link.addEventListener("click", () => {
+         let id = link.getAttribute("data-scroll");
+         // link.classList.add("active");
+         sections.forEach((section) => {
+            if (section.getAttribute("data-scroll") === id) {
+               window.scrollBy({
+                  top: section.getBoundingClientRect().top,
+                  behavior: "smooth",
+               });
+            }
+         });
+      });
+   });
+
+   const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+         console.log(entry);
+         if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+            let section = entry.target?.nextElementSibling;
+            if (!section || !section.getAttribute("data-scroll")) {
+               return;
+            }
+            let id = section.getAttribute("data-scroll");
+            links.forEach((link) => {
+               link.classList.remove("active");
+               if (link.getAttribute("data-scroll") === id) {
+                  link.classList.add("active");
+               }
+            });
+         } else {
+            if (entry.boundingClientRect.top < 0) {
+               console.log(entry);
+               let section = entry.target;
+               if (!section || !section.getAttribute("data-scroll")) {
+                  return;
+               }
+               let id = section.getAttribute("data-scroll");
+               links.forEach((link) => {
+                  link.classList.remove("active");
+                  if (link.getAttribute("data-scroll") === id) {
+                     link.classList.add("active");
+                  }
+               });
+            }
+         }
+      });
+   };
+
+   const options = {
+      // root: по умолчанию window, но можно задать любой элемент-контейнер
+      rootMargin: "0px 0px 75px 0px",
+      threshold: 0,
+   };
+
+   const observer = new IntersectionObserver(callback, options);
+
+   sections.forEach((section) => observer.observe(section));
 }

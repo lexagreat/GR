@@ -13,7 +13,26 @@
          margin-top: 0;
       }
    }
-
+   &__tabs {
+      @media (max-width: 768px) {
+         .swiper-tabs__wrapper {
+            flex-wrap: nowrap;
+            width: 100vw;
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            // padding-left: 12px;
+            // padding-right: 12px;
+            &::-webkit-scrollbar {
+               display: none;
+            }
+         }
+         // margin-left: -12px;
+         // margin-right: -12px;
+         width: 100vw;
+         overflow: hidden;
+      }
+   }
    &__title {
    }
 
