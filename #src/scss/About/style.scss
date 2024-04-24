@@ -1,0 +1,394 @@
+.about-page {
+   &__text {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 36px;
+      line-height: calc(50 / 36);
+      color: #151515;
+      span {
+         font-weight: 500;
+      }
+   }
+   @media (max-width: 992px) {
+      &__text {
+         font-size: calc(20 / 375 * 100vw);
+      }
+   }
+}
+.about-hero {
+   margin-top: 20px;
+   &__title {
+      margin-bottom: 90px;
+   }
+   &__wrapper {
+      max-width: 885px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 90px;
+      position: relative;
+      &::after {
+         content: "";
+         display: block;
+         width: 150px;
+         height: 150px;
+         background: url(../../img/svg/about-star.svg) center / cover no-repeat;
+         position: absolute;
+         top: 0;
+         right: 0;
+         transform: translateX(50%) translateY(-50%);
+      }
+   }
+   &__description {
+      @media (max-width: 992px) {
+         br {
+            display: none;
+         }
+      }
+   }
+   @media (max-width: 992px) {
+      &__title {
+         margin-bottom: 160px;
+      }
+      &__wrapper {
+         &::after {
+            top: unset;
+            transform: translateX(50%) translateY(-10%);
+            bottom: 100%;
+            right: 50%;
+            width: calc(60 / 375 * 100vw);
+            height: calc(60 / 375 * 100vw);
+         }
+      }
+   }
+   @media (max-width: 568px) {
+      &__wrapper {
+         &::after {
+            width: calc(90 / 375 * 100vw);
+            height: calc(90 / 375 * 100vw);
+            transform: translateX(50%) translateY(-30px);
+         }
+      }
+   }
+}
+.about-team {
+   display: flex;
+   flex-direction: column;
+   gap: 43px;
+   position: relative;
+   &::after {
+      content: "";
+      display: block;
+      width: 272px;
+      height: 357px;
+      background: url(../../img/svg/about-arrow.svg) center / cover no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(70px) translateY(-50px);
+   }
+   &__title {
+   }
+
+   &__members {
+      display: flex;
+      li {
+         width: 120px;
+         height: 120px;
+         flex: 0 0 120px;
+         border-radius: 50%;
+         overflow: hidden;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+      li + li {
+         margin-left: -20px;
+      }
+   }
+
+   &__description {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 24px;
+      line-height: calc(36 / 24);
+      color: #151515;
+      @media (max-width: 992px) {
+         br {
+            display: none;
+         }
+      }
+   }
+
+   &__text {
+      position: relative;
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         height: 17px;
+         background: url(../../img/svg/about-underline.svg) left / auto
+            no-repeat;
+         position: absolute;
+         top: calc(100% + 10px);
+         left: 0;
+      }
+   }
+   @media (max-width: 992px) {
+      &::after {
+         transform: translateX(0px) translateY(-50px);
+
+         width: calc(96 / 375 * 100vw);
+         height: calc(126 / 375 * 100vw);
+      }
+      &__description {
+         font-size: calc(17 / 375 * 100vw);
+      }
+      &__members {
+         li {
+            width: calc(70 / 375 * 100vw);
+            height: calc(70 / 375 * 100vw);
+            flex: 0 0 calc(70 / 375 * 100vw);
+         }
+      }
+      &__text {
+         &::after {
+            height: 8px;
+            background: url(../../img/svg/about-underline.svg) center / cover
+               no-repeat;
+         }
+      }
+   }
+   @media (max-width: 568px) {
+      &__members {
+         li {
+            width: calc(90 / 375 * 100vw);
+            height: calc(90 / 375 * 100vw);
+            flex: 0 0 calc(90 / 375 * 100vw);
+         }
+      }
+   }
+}
+.about-stats {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   background-color: #195aff;
+   color: white;
+   &__wrapper {
+      height: 198px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      li {
+         display: flex;
+         gap: 24px;
+         align-items: center;
+      }
+      .big {
+         font-family: "Stolzl", sans-serif;
+         font-size: 96px;
+         line-height: calc(115 / 96);
+      }
+      .small {
+         font-family: "TT Norms Pro", sans-serif;
+         font-size: 24px;
+         font-weight: 500;
+         line-height: calc(34 / 24);
+      }
+   }
+
+   @media (max-width: 1440px) {
+      &__list {
+         li {
+            gap: calc(24 / 1440 * 100vw);
+         }
+         .big {
+            font-size: calc(96 / 1440 * 100vw);
+         }
+         .small {
+            font-size: calc(24 / 1440 * 100vw);
+         }
+      }
+   }
+   @media (max-width: 992px) {
+      margin-top: calc(50 / 375 * 100vw);
+      margin-top: calc(50 / 375 * 100vw);
+      &__wrapper {
+         height: unset;
+         padding-top: calc(16 / 375 * 100vw);
+         padding-bottom: calc(16 / 375 * 100vw);
+      }
+      &__list {
+         flex-direction: column;
+         li {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: calc(7 / 375 * 100vw);
+         }
+         .big {
+            font-size: calc(48 / 375 * 100vw);
+         }
+         .small {
+            font-size: calc(16 / 375 * 100vw);
+         }
+      }
+   }
+}
+.about-example {
+   margin-top: 100px;
+   &__wrapper {
+      display: flex;
+      gap: 86px;
+   }
+   &__video {
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      flex: 0 0 550px;
+      width: 550px;
+      border-radius: 25px;
+      overflow: hidden;
+      video {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &__main {
+   }
+
+   &__title {
+   }
+
+   &__text {
+      font-family: TT Norms Pro;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: #616161;
+      margin-bottom: 23px;
+      margin-top: 36px;
+   }
+
+   &__author {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+   }
+
+   &__image {
+      width: 60px;
+      height: 60px;
+      flex: 0 0 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__name {
+      font-family: "Stolzl", sans-serif;
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      color: #151515;
+   }
+
+   &__rang {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: calc(21 / 14);
+      color: #8c8c8c;
+   }
+   @media (max-width: 992px) {
+      &__wrapper {
+         flex-direction: column;
+         gap: calc(24 / 375 * 100vw);
+      }
+      &__main {
+         display: flex;
+         flex-direction: column;
+         gap: calc(14 / 375 * 100vw);
+      }
+      &__text {
+         margin: 0;
+         font-size: calc(14 / 375 * 100vw);
+      }
+      &__video {
+         flex: unset;
+         width: 100%;
+      }
+      &__author {
+         gap: calc(15 / 375 * 100vw);
+      }
+
+      &__image {
+         width: calc(60 / 375 * 100vw);
+         height: calc(60 / 375 * 100vw);
+         flex: 0 0 calc(60 / 375 * 100vw);
+      }
+      &__info {
+         gap: 7px;
+      }
+      &__name {
+         font-size: calc(14 / 375 * 100vw);
+      }
+
+      &__rang {
+         font-size: calc(10 / 375 * 100vw);
+      }
+   }
+}
+.example-controls {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 134px;
+   height: calc(256px / 2);
+   border-radius: 100px 100px 0 0;
+   background-color: #195aff;
+   position: absolute;
+   right: 24px;
+   bottom: 0;
+   font-family: "TT Norms Pro", sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: calc(20 / 14);
+   color: white;
+   &__play {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+   @media (max-width: 992px) {
+      width: calc(98 / 375 * 100vw);
+      height: calc(153 / 2 / 375 * 100vw);
+      font-size: calc(12 / 375 * 100vw);
+      &__play {
+         svg {
+            width: calc(24 / 375 * 100vw);
+            height: calc(24 / 375 * 100vw);
+         }
+      }
+   }
+}

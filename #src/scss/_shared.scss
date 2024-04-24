@@ -1,3 +1,13 @@
+.h1 {
+   font-family: "Stolzl", sans-serif;
+   font-size: 64px;
+   line-height: calc(77 / 64);
+   color: #151515;
+
+   @media (max-width: 992px) {
+      font-size: calc(28 / 375 * 100vw);
+   }
+}
 .h2 {
    font-family: "Stolzl", sans-serif;
    font-size: 48px;

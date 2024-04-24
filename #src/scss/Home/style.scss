@@ -74,3 +74,23 @@
       }
    }
 }
+.about__divide {
+   opacity: 0.3;
+}
+.command__conatiner {
+   @media (max-width: 1200px) {
+      // margin-left: -12px;
+      // margin-right: -12px;
+      padding-left: 0;
+      padding-right: 0;
+      .swiper {
+         padding-left: 12px;
+         padding-right: 12px;
+      }
+   }
+}
+.command__content-cards {
+   @media (max-width: 568px) {
+      flex-wrap: wrap;
+   }
+}

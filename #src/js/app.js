@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
    headerWork();
    // article
    articlePageNavigation();
+
+   // about
+   controlsExampleVideo();
 });
 
 // Popup
@@ -339,4 +342,18 @@ function articlePageNavigation() {
    const observer = new IntersectionObserver(callback, options);
 
    sections.forEach((section) => observer.observe(section));
+}
+
+function controlsExampleVideo() {
+   const controls = document.querySelector(".example-controls");
+   const video = document.querySelector(".about-example__video video");
+   if (!controls) {
+      return;
+   }
+   controls.addEventListener("click", (e) => {
+      console.log(e.target);
+      if (e.target.closest(".example-controls__play")) {
+         video.play();
+      }
+   });
 }
