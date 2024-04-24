@@ -1,0 +1,434 @@
+.portfolio-hero {
+   &__wrapper {
+   }
+
+   &__title {
+   }
+
+   &__description {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 36px;
+      line-height: calc(50 / 36);
+      color: #151515;
+      margin-top: 26px;
+      margin-bottom: 26px;
+   }
+
+   &__swiper {
+      width: 100%;
+      margin-top: 23px;
+      height: 600px;
+   }
+   .swiper__tabs {
+      margin-top: 0;
+   }
+   .cards__swiper-slide {
+      grid-template-columns: 1fr;
+   }
+   .swiper {
+      overflow: unset;
+      overflow-y: clip;
+      overflow-x: hidden;
+   }
+   &__nav {
+      &_prev,
+      &_next {
+         top: unset;
+         bottom: 0px;
+
+         &:after {
+            display: none;
+         }
+      }
+      &_prev {
+         transform: translateX(calc(-100% - 16px)) rotate(180deg);
+         right: 0;
+         left: unset;
+      }
+      &_next {
+         right: 0;
+      }
+   }
+   @media (max-width: 992px) {
+      &__description {
+         font-size: calc(14 / 375 * 100vw);
+         margin-top: calc(12 / 375 * 100vw);
+         margin-bottom: calc(12 / 375 * 100vw);
+      }
+   }
+   @media (max-width: 768px) {
+      &__swiper {
+         height: 300px;
+      }
+   }
+}
+.portfolio-slide {
+   position: relative;
+   // cursor: pointer;
+   height: 550px;
+   transition: 0.3s;
+   user-select: none;
+   &.swiper-slide-active {
+      height: 600px;
+   }
+   &:hover {
+      .portfolio-slide {
+         &__front {
+            opacity: 1;
+         }
+      }
+   }
+   &__front {
+      box-shadow: 0px -250px 100px 0px #1450eb inset;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 32px;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 22px;
+   }
+
+   &__description {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+
+      color: white;
+   }
+
+   &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__title {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 22px;
+      line-height: calc(31 / 22);
+      color: white;
+      transition: 0.3s;
+      &:hover {
+         color: #151515;
+      }
+   }
+
+   &__link {
+      height: 38px;
+      width: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 50px;
+      transition: 0.3s;
+      &:hover {
+         background-color: #151515;
+         svg path {
+            fill: white;
+         }
+      }
+   }
+
+   &__image {
+      height: 100%;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   @media (max-width: 768px) {
+      height: 250px;
+      &.swiper-slide-active {
+         height: 300px;
+      }
+      &__description {
+         font-size: calc(12 / 375 * 100vw);
+      }
+      &__title {
+         font-size: calc(16 / 375 * 100vw);
+      }
+      &__link {
+         height: calc(32 / 375 * 100vw);
+         width: calc(40 / 375 * 100vw);
+      }
+      &__front {
+         padding-left: calc(10 / 375 * 100vw);
+         padding-right: calc(10 / 375 * 100vw);
+         padding-bottom: calc(15 / 375 * 100vw);
+         gap: calc(10 / 375 * 100vw);
+      }
+   }
+}
+.portfolio-preferences {
+   margin-top: 95px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 84px;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      &:nth-child(even) {
+         flex-direction: row-reverse;
+      }
+   }
+
+   &__image {
+      flex: 0 0 550px;
+      border-radius: 25px;
+      overflow: hidden;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__main {
+   }
+
+   &__title {
+      margin-bottom: 36px;
+   }
+
+   &__description {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: #616161;
+      p + p {
+         margin-top: 12px;
+      }
+   }
+
+   &__btn {
+      margin-top: 38px;
+      height: 45px;
+      border: 1px solid #195aff;
+      color: #195aff;
+      font-size: 18px;
+   }
+   @media (max-width: 992px) {
+      &__wrapper {
+         gap: calc(55 / 375 * 100vw);
+      }
+      &__item {
+         flex-direction: column;
+         gap: calc(28 / 375 * 100vw);
+         &:nth-child(even) {
+            flex-direction: column;
+         }
+      }
+      &__description {
+         font-size: calc(14 / 375 * 100vw);
+      }
+      &__title {
+         margin-bottom: calc(12 / 375 * 100vw);
+      }
+      &__image {
+         flex: unset;
+      }
+      &__btn {
+         margin: 0 auto;
+         margin-top: calc(28 / 375 * 100vw);
+      }
+   }
+}
+.portfolio-banner {
+   margin-top: 60px;
+   &__wrapper {
+      padding: 40px;
+      border-radius: 25px;
+      background: url(../../img/static/portfolio/banner.png) center / cover
+         no-repeat;
+   }
+
+   &__title {
+      color: white;
+      span {
+         width: fit-content;
+         padding-left: 12px;
+         padding-right: 12px;
+         border-radius: 25px;
+         display: block;
+         background-color: #195aff;
+      }
+   }
+
+   &__text {
+      max-width: 537px;
+      margin-top: 30px;
+      margin-bottom: 45px;
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: white;
+   }
+
+   &__btn {
+      height: 64px;
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: calc(32 / 20);
+      color: #151515;
+      background-color: white;
+   }
+   @media (max-width: 992px) {
+      &__wrapper {
+         text-align: center;
+         padding-top: calc(55 / 375 * 100vw);
+         padding-left: calc(18 / 375 * 100vw);
+         padding-right: calc(18 / 375 * 100vw);
+         padding-bottom: calc(40 / 375 * 100vw);
+      }
+      &__title {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         font-size: calc(19 / 375 * 100vw);
+      }
+      &__text {
+         font-size: calc(14 / 375 * 100vw);
+         margin-top: calc(25 / 375 * 100vw);
+         margin-bottom: calc(35 / 375 * 100vw);
+      }
+      &__btn {
+         margin: 0 auto;
+         height: calc(50 / 375 * 100vw);
+         font-size: calc(16 / 375 * 100vw);
+      }
+   }
+}
+.portfolio-faq {
+   margin-top: 82px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+   }
+   @media (max-width: 992px) {
+      &__wrapper {
+         gap: 32px;
+      }
+   }
+}
+.faq-item {
+   border-bottom: 1px solid #cdd6da40;
+   padding-top: 52px;
+   padding-right: 60px;
+   padding-left: 60px;
+   padding-bottom: 55px;
+   &:last-child {
+      border: 0;
+   }
+   &__header {
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 52px;
+      &.active {
+         .faq-item {
+            &__btn {
+               background-color: #195aff;
+               transform: rotate(45deg);
+               svg path {
+                  fill: white;
+               }
+            }
+         }
+      }
+   }
+
+   &__index {
+      font-family: "Inter", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: calc(58 / 48);
+      letter-spacing: 0.25px;
+      color: #3c3c4380;
+   }
+
+   &__main {
+      gap: 10px;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__title {
+      color: #000;
+      font-family: "Stolzl", sans-serif;
+      font-size: 32px;
+      line-height: calc(38 / 32);
+   }
+
+   &__btn {
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      border-radius: 50%;
+      background-color: #f3f5f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      svg path {
+         transition: 0.3s;
+      }
+   }
+
+   &__spoiler {
+   }
+
+   &__text {
+      padding-top: 24px;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: #3c3c43d9;
+   }
+   @media (max-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: calc(24 / 375 * 100vw);
+      padding-top: calc(24 / 375 * 100vw);
+      &__index {
+         font-size: calc(32 / 375 * 100vw);
+      }
+      &__title {
+         font-size: calc(18 / 375 * 100vw);
+      }
+      &__text {
+         font-size: calc(14 / 375 * 100vw);
+      }
+      &__header {
+         gap: calc(16 / 375 * 100vw);
+      }
+      &__btn {
+         width: calc(32 / 375 * 100vw);
+         height: calc(32 / 375 * 100vw);
+         flex: 0 0 calc(32 / 375 * 100vw);
+         svg {
+            width: calc(10 / 375 * 100vw);
+            height: calc(10 / 375 * 100vw);
+         }
+      }
+   }
+}

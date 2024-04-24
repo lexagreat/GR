@@ -42,3 +42,6 @@
    font-family: "TT Norms Pro";
    cursor: pointer;
 }
+.collapse:not(.collapse_show) {
+   display: none;
+}
