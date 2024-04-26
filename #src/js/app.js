@@ -257,6 +257,16 @@ document.addEventListener("DOMContentLoaded", () => {
          },
       },
    });
+   const developmentSwiper = new Swiper(".development-portfolio__slider", {
+      slidesPerView: "auto",
+      loop: true,
+      speed: 1000,
+      spaceBetween: 36,
+      navigation: {
+         nextEl: ".development-portfolio__nav_next",
+         prevEl: ".development-portfolio__nav_prev",
+      },
+   });
 
    const cardsSwiper = new Swiper(".cards__swiper", {
       slidesPerView: 1,
