@@ -267,7 +267,27 @@ document.addEventListener("DOMContentLoaded", () => {
          prevEl: ".development-portfolio__nav_prev",
       },
    });
-
+   const avitoTeamSlider = new Swiper(".avito-team__slider", {
+      slidesPerView: "auto",
+      spaceBetween: 13,
+      navigation: {
+         nextEl: ".avito-team__nav_next",
+         prevEl: ".avito-team__nav_prev",
+      },
+      breakpoints: {
+         993: {
+            slidesPerView: 3,
+         },
+      },
+   });
+   const avitoGraphSlider = new Swiper(".avito-graph__swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 13,
+      navigation: {
+         nextEl: ".portfolio-hero__nav_next",
+         prevEl: ".portfolio-hero__nav_prev",
+      },
+   });
    const cardsSwiper = new Swiper(".cards__swiper", {
       slidesPerView: 1,
       allowTouchMove: false,
