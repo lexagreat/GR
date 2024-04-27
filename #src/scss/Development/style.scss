@@ -9,8 +9,18 @@
       gap: 48px;
       min-height: 700px;
       border-radius: 25px;
-      background: url(../img/static/development/hero.png) center / cover
-         no-repeat;
+      // background: url(../img/static/development/hero.png) center / cover
+      //    no-repeat;
+      position: relative;
+      video {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -1;
+      }
    }
 
    &__main {
@@ -584,8 +594,9 @@
          }
       }
       &__wrapper {
-         background: url(../img/static/development/banner-bg.png) center / cover
-            no-repeat;
+         // background: url(../img/static/development/banner-bg.png) center / cover
+         //    no-repeat;
+         background: none !important;
       }
    }
 }
