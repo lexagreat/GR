@@ -3,6 +3,7 @@
 @import "sections/_sections";
 @import "_shared";
 @import "_breadcrumbs";
+@import "_modal";
 @import "Home/style";
 @import "Blog/style";
 @import "Blog/article";
@@ -10,3 +11,6 @@
 @import "Portfolio/style";
 @import "Development/style";
 @import "Avito/style";
+.wrapper {
+   width: 100%;
+}

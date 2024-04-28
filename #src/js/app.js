@@ -320,8 +320,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const maskOptions = {
    mask: "+{7} (000) 000-00-00",
 };
-if (document.getElementById("phoneInput")) {
-   const mask = IMask(document.getElementById("phoneInput"), maskOptions);
+const phoneInputs = document.querySelectorAll("#phoneInput");
+if (phoneInputs.length) {
+   phoneInputs.forEach((item) => {
+      const mask = IMask(item, maskOptions);
+   });
 }
 
 //article page

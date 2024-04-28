@@ -5,277 +5,288 @@
 })
 
 <body>
-   @@include('html/header.html', {})
-   <main class="main">
-      <div class="breadcrumbs">
-         <div class="container">
-            <ul class="breadcrumbs__list">
-               <li>
-                  <a href="index.html" class="breadcrumbs__link">Главная</a>
-               </li>
-               <li>
-                  <a href="#" class="breadcrumbs__link">Публикации</a>
-               </li>
-               <li>
-                  <a href="#" class="breadcrumbs__link">Основы HTML и CSS</a>
-               </li>
-            </ul>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <div class="breadcrumbs">
+            <div class="container">
+               <ul class="breadcrumbs__list">
+                  <li>
+                     <a href="index.html" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li>
+                     <a href="#" class="breadcrumbs__link">Публикации</a>
+                  </li>
+                  <li>
+                     <a href="#" class="breadcrumbs__link">Основы HTML и CSS</a>
+                  </li>
+               </ul>
 
-         </div>
-      </div>
-      <section class="article-page">
-         <div class="container">
-            <div class="article-page__wrapper">
-               <div class="article-page__content">
-                  <h1 class="article-page__title h2">
-                     Основы HTML и CSS
-                  </h1>
-                  <ul class="article-page__list">
-                     <li class="article-page__section article-section">
-                        <div class="article-section__image">
-                           <img src="img/static/article/article-image.png" alt="">
-                        </div>
-                     </li>
-                     <li class="article-page__section article-section" data-scroll="1">
-                        <h2 class="article-section__title h3">Что нового</h2>
-
-                        <div class="article-section__text">
-                           <p>
-                              А еще не помогали регистрировать ИП, если предприниматель находится за границей или
-                              он несовершеннолетний. Теперь сможем бесплатно открывать бизнес в этих ситуациях —
-                              через партнера, сервис «Кнопка». Регистрация через Кнопку пока работает в тестовом
-                              формате —
-                              до 30 июня 2024 года.
-                           </p>
-
-                           <p>
-                              Еще я начала фиксировать траты в CoinKeeper. Правда, оказалось, что приложение многое
-                              не умеет
-                              делать автоматически: например, записывать часть трат или заводить категории расходов —
-                              приходилось делать это вручную.
-                           </p>
-                        </div>
-                     </li>
-                     <li class="article-page__section article-section" data-scroll="2">
-                        <h2 class="article-section__title h3">Что изменилось, <br> когда мы познакомились с Вовой</h2>
-
-                        <div class="article-section__text">
-                           <p>
-                              Когда мы познакомились, у Вовы были абстрактные цели, например когда‑нибудь купить
-                              квартиру.
-                              Но он даже не знал, сколько примерно стоит недвижимость, и не вел бюджет.
-                              Когда мы стали планировать совместные поездки или досуг на выходные, много ругались
-                              из‑за того, что он хотел оплачивать их сам.
-
-                           </p>
-                           <p>
-                              Я возмущалась: была убеждена, что раз у меня есть работа, я должна платить за себя сама.
-                              А Вова пытался донести, что его доход больше и платить за нас двоих — это справедливо.
-                              Мы не могли найти точки соприкосновения.
-                           </p>
-
-                           <p>
-                              В марте 2022 года мы съехались. Общих трат стало больше: добавились аренда квартиры,
-                              доставка
-                              продуктов, развлечения с друзьями. Сначала мы пытались платить по очереди, но когда стали
-                              планировать первый совместный отпуск, начались проблемы: Вова не хотел делить траты
-                              на поездку поровну, а скидываться пропорционально доходам казалось несправедливым.
-                           </p>
-
-                           <p>
-                              Мы поняли, что проблему решит только совместный бюджет, где все деньги и цели, на которые
-                              мы их тратим, будут общими. Эту идею предложил Вова, а я долго отказывалась: мне было
-                              некомфортно, потому что он зарабатывал в два раза больше, а значит, мой вклад в общий
-                              бюджет
-                              будет меньше. Со временем стало понятно, что по‑другому проблему не решить,
-                              и я согласилась
-                              на общий счет.
-                           </p>
-                        </div>
-                     </li>
-                     <li class="article-page__section article-section">
-                        <div class="article-section__image">
-                           <img src="img/static/article/article-image.png" alt="">
-                        </div>
-                     </li>
-                     <li class="article-page__section article-section" data-scroll="3">
-                        <h2 class="article-section__title h3">Как мы откладываем сразу на шесть целей</h2>
-
-                        <div class="article-section__text">
-
-                           <p>
-                              На старте мы обсудили, на что хотим копить. Получилось шесть целей — под них мы открыли
-                              пять
-                              накопительных счетов и вклад.
-                           </p>
-
-                           <p>
-                              Ипотека. На год отношений мы купили квартиру в ипотеку. На этот счет откладываем деньги,
-                              чтобы гасить кредит досрочно.
-                           </p>
-
-                           <p>
-                              Ремонт. Когда наш дом сдадут, в квартире нужно будет сделать ремонт. Такие работы сейчас
-                              стоят пару миллионов.
-                           </p>
-
-                           <p>
-                              Путешествия. Это счет в долларах. Чтобы его пополнить, мы каждый раз конвертируем рубли
-                              в валюту, причем вне зависимости от курса: он часто растет и падает, угадать, когда будет
-                              выгодно купить доллары, не получится.
-
-                           </p>
-                           <p>
-                              Здоровье. Здесь лежат деньги на походы к врачу, например к стоматологу. Тратим
-                              их по необходимости, а если деньги не понадобились в этом месяце, они сохраняются
-                              до следующего.
-                           </p>
-
-                           <p> Подарки. Часто нужны деньги на подарки — на свадьбы и дни рождения, друг другу,
-                              родителям.</p>
-
-                           <p>
-                              Деньги на черный день. Это пополняемый вклад — неприкасаемый счет, деньги с него мы будем
-                              использовать, только если случится что‑то непредвиденное. Например, если кто‑то из нас
-                              заболеет, а лечение будет стоить очень дорого, или придется экстренно переезжать.
-                           </p>
-                        </div>
-                     </li>
-                  </ul>
-                  <a href="blog.html" class="article-page__back btn">Вернуться к статьям</a>
-               </div>
-               <aside class="article-aside ">
-                  <div class="article-aside__sections aside-sections article-aside__item">
-                     <div class="article-aside__title article-aside__title_black">
-                        Разделы
-                     </div>
-                     <ul class="aside-sections__list">
-                        <li>
-                           <a href="#" class="aside-sections__link">Новости</a>
-                        </li>
-                        <li>
-                           <a href="#" class="aside-sections__link">Wordpress</a>
-                        </li>
-                        <li>
-                           <a href="#" class="aside-sections__link">
-                              Разработка и IT
-
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="aside-sections__link">
-                              SEO - продвижение
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="article-aside__navigation article-navigation article-aside__item">
-                     <div class="article-aside__title article-aside__title_black">
-                        Навигация
-                     </div>
-                     <ul class="article-navigation__list">
-                        <li class="article-navigation__item " data-scroll="1">
-                           Что нового
-                        </li>
-                        <li class="article-navigation__item " data-scroll="2">
-                           Что изменилось, когда мы познакомились с Вовой
-                        </li>
-                        <li class="article-navigation__item " data-scroll="3">
-                           Как мы откладываем сразу на шесть целей
-                        </li>
-                     </ul>
-                  </div>
-                  <form action="#" class="article-aside__form article-form">
-                     <div class="article-aside__title article-aside__title_white">
-                        Оставайтесь в курсе новостей
-                     </div>
-                     <div class="article-form__main">
-                        <input type="text" placeholder="Email">
-                        <button class="article-form__btn btn">Подписаться</button>
-                     </div>
-                     <div class="article-form__footer">
-                        * обязательные поля для заполнения. Заполнив форму Вы соглашаетесь с <a
-                           href="#">условиями</a> обработки
-                        персональных данных
-                     </div>
-                  </form>
-               </aside>
-            </div>
-      </section>
-      <section class="article-footer">
-         <div class="container">
-            <div class="article-footer__wrapper">
-               <h3 class="article-footer__title">Вас также заинтересует</h3>
-               <div class="article-footer__items">
-                  <div class="blog-card">
-
-                     <div class="blog-card__image">
-                        <img src="img/static/blog/wp.png" alt="">
-                     </div>
-                     <div class="blog-card__main">
-                        <ul class="blog-card__tags">
-                           <li class="blog-card__tag btn">
-                              Wordpress
-                           </li>
-                        </ul>
-                        <div class="blog-card__title">Как начать работу</div>
-                        <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                           которое
-                           поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                        <div class="blog-card__footer">
-                           <div class="blog-card__date">26.06.2023</div>
-                           <a href="#" class="blog-card__link btn">Подробнее</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="blog-card">
-
-                     <div class="blog-card__image">
-                        <img src="img/static/blog/wp.png" alt="">
-                     </div>
-                     <div class="blog-card__main">
-                        <ul class="blog-card__tags">
-                           <li class="blog-card__tag btn">
-                              Wordpress
-                           </li>
-                        </ul>
-                        <div class="blog-card__title">Как начать работу</div>
-                        <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                           которое
-                           поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                        <div class="blog-card__footer">
-                           <div class="blog-card__date">26.06.2023</div>
-                           <a href="#" class="blog-card__link btn">Подробнее</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="blog-card">
-
-                     <div class="blog-card__image">
-                        <img src="img/static/blog/wp.png" alt="">
-                     </div>
-                     <div class="blog-card__main">
-                        <ul class="blog-card__tags">
-                           <li class="blog-card__tag btn">
-                              Wordpress
-                           </li>
-                        </ul>
-                        <div class="blog-card__title">Как начать работу</div>
-                        <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                           которое
-                           поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                        <div class="blog-card__footer">
-                           <div class="blog-card__date">26.06.2023</div>
-                           <a href="#" class="blog-card__link btn">Подробнее</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
-      </section>
-   </main>
-   @@include('html/footer.html', {})
+         <section class="article-page">
+            <div class="container">
+               <div class="article-page__wrapper">
+                  <div class="article-page__content">
+                     <h1 class="article-page__title h2">
+                        Основы HTML и CSS
+                     </h1>
+                     <ul class="article-page__list">
+                        <li class="article-page__section article-section">
+                           <div class="article-section__image">
+                              <img src="img/static/article/article-image.png" alt="">
+                           </div>
+                        </li>
+                        <li class="article-page__section article-section" data-scroll="1">
+                           <h2 class="article-section__title h3">Что нового</h2>
+
+                           <div class="article-section__text">
+                              <p>
+                                 А еще не помогали регистрировать ИП, если предприниматель находится за границей или
+                                 он несовершеннолетний. Теперь сможем бесплатно открывать бизнес в этих ситуациях —
+                                 через партнера, сервис «Кнопка». Регистрация через Кнопку пока работает в тестовом
+                                 формате —
+                                 до 30 июня 2024 года.
+                              </p>
+
+                              <p>
+                                 Еще я начала фиксировать траты в CoinKeeper. Правда, оказалось, что приложение многое
+                                 не умеет
+                                 делать автоматически: например, записывать часть трат или заводить категории расходов —
+                                 приходилось делать это вручную.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="article-page__section article-section" data-scroll="2">
+                           <h2 class="article-section__title h3">Что изменилось, <br> когда мы познакомились с Вовой
+                           </h2>
+
+                           <div class="article-section__text">
+                              <p>
+                                 Когда мы познакомились, у Вовы были абстрактные цели, например когда‑нибудь купить
+                                 квартиру.
+                                 Но он даже не знал, сколько примерно стоит недвижимость, и не вел бюджет.
+                                 Когда мы стали планировать совместные поездки или досуг на выходные, много ругались
+                                 из‑за того, что он хотел оплачивать их сам.
+
+                              </p>
+                              <p>
+                                 Я возмущалась: была убеждена, что раз у меня есть работа, я должна платить за себя
+                                 сама.
+                                 А Вова пытался донести, что его доход больше и платить за нас двоих — это справедливо.
+                                 Мы не могли найти точки соприкосновения.
+                              </p>
+
+                              <p>
+                                 В марте 2022 года мы съехались. Общих трат стало больше: добавились аренда квартиры,
+                                 доставка
+                                 продуктов, развлечения с друзьями. Сначала мы пытались платить по очереди, но когда
+                                 стали
+                                 планировать первый совместный отпуск, начались проблемы: Вова не хотел делить траты
+                                 на поездку поровну, а скидываться пропорционально доходам казалось несправедливым.
+                              </p>
+
+                              <p>
+                                 Мы поняли, что проблему решит только совместный бюджет, где все деньги и цели,
+                                 на которые
+                                 мы их тратим, будут общими. Эту идею предложил Вова, а я долго отказывалась: мне было
+                                 некомфортно, потому что он зарабатывал в два раза больше, а значит, мой вклад в общий
+                                 бюджет
+                                 будет меньше. Со временем стало понятно, что по‑другому проблему не решить,
+                                 и я согласилась
+                                 на общий счет.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="article-page__section article-section">
+                           <div class="article-section__image">
+                              <img src="img/static/article/article-image.png" alt="">
+                           </div>
+                        </li>
+                        <li class="article-page__section article-section" data-scroll="3">
+                           <h2 class="article-section__title h3">Как мы откладываем сразу на шесть целей</h2>
+
+                           <div class="article-section__text">
+
+                              <p>
+                                 На старте мы обсудили, на что хотим копить. Получилось шесть целей — под них мы открыли
+                                 пять
+                                 накопительных счетов и вклад.
+                              </p>
+
+                              <p>
+                                 Ипотека. На год отношений мы купили квартиру в ипотеку. На этот счет откладываем
+                                 деньги,
+                                 чтобы гасить кредит досрочно.
+                              </p>
+
+                              <p>
+                                 Ремонт. Когда наш дом сдадут, в квартире нужно будет сделать ремонт. Такие работы
+                                 сейчас
+                                 стоят пару миллионов.
+                              </p>
+
+                              <p>
+                                 Путешествия. Это счет в долларах. Чтобы его пополнить, мы каждый раз конвертируем рубли
+                                 в валюту, причем вне зависимости от курса: он часто растет и падает, угадать, когда
+                                 будет
+                                 выгодно купить доллары, не получится.
+
+                              </p>
+                              <p>
+                                 Здоровье. Здесь лежат деньги на походы к врачу, например к стоматологу. Тратим
+                                 их по необходимости, а если деньги не понадобились в этом месяце, они сохраняются
+                                 до следующего.
+                              </p>
+
+                              <p> Подарки. Часто нужны деньги на подарки — на свадьбы и дни рождения, друг другу,
+                                 родителям.</p>
+
+                              <p>
+                                 Деньги на черный день. Это пополняемый вклад — неприкасаемый счет, деньги с него
+                                 мы будем
+                                 использовать, только если случится что‑то непредвиденное. Например, если кто‑то из нас
+                                 заболеет, а лечение будет стоить очень дорого, или придется экстренно переезжать.
+                              </p>
+                           </div>
+                        </li>
+                     </ul>
+                     <a href="blog.html" class="article-page__back btn">Вернуться к статьям</a>
+                  </div>
+                  <aside class="article-aside ">
+                     <div class="article-aside__sections aside-sections article-aside__item">
+                        <div class="article-aside__title article-aside__title_black">
+                           Разделы
+                        </div>
+                        <ul class="aside-sections__list">
+                           <li>
+                              <a href="#" class="aside-sections__link">Новости</a>
+                           </li>
+                           <li>
+                              <a href="#" class="aside-sections__link">Wordpress</a>
+                           </li>
+                           <li>
+                              <a href="#" class="aside-sections__link">
+                                 Разработка и IT
+
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#" class="aside-sections__link">
+                                 SEO - продвижение
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="article-aside__navigation article-navigation article-aside__item">
+                        <div class="article-aside__title article-aside__title_black">
+                           Навигация
+                        </div>
+                        <ul class="article-navigation__list">
+                           <li class="article-navigation__item " data-scroll="1">
+                              Что нового
+                           </li>
+                           <li class="article-navigation__item " data-scroll="2">
+                              Что изменилось, когда мы познакомились с Вовой
+                           </li>
+                           <li class="article-navigation__item " data-scroll="3">
+                              Как мы откладываем сразу на шесть целей
+                           </li>
+                        </ul>
+                     </div>
+                     <form action="#" class="article-aside__form article-form">
+                        <div class="article-aside__title article-aside__title_white">
+                           Оставайтесь в курсе новостей
+                        </div>
+                        <div class="article-form__main">
+                           <input type="text" placeholder="Email">
+                           <button class="article-form__btn btn">Подписаться</button>
+                        </div>
+                        <div class="article-form__footer">
+                           * обязательные поля для заполнения. Заполнив форму Вы соглашаетесь с <a
+                              href="#">условиями</a> обработки
+                           персональных данных
+                        </div>
+                     </form>
+                  </aside>
+               </div>
+         </section>
+         <section class="article-footer">
+            <div class="container">
+               <div class="article-footer__wrapper">
+                  <h3 class="article-footer__title">Вас также заинтересует</h3>
+                  <div class="article-footer__items">
+                     <div class="blog-card">
+
+                        <div class="blog-card__image">
+                           <img src="img/static/blog/wp.png" alt="">
+                        </div>
+                        <div class="blog-card__main">
+                           <ul class="blog-card__tags">
+                              <li class="blog-card__tag btn">
+                                 Wordpress
+                              </li>
+                           </ul>
+                           <div class="blog-card__title">Как начать работу</div>
+                           <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                              которое
+                              поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                           <div class="blog-card__footer">
+                              <div class="blog-card__date">26.06.2023</div>
+                              <a href="#" class="blog-card__link btn">Подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="blog-card">
+
+                        <div class="blog-card__image">
+                           <img src="img/static/blog/wp.png" alt="">
+                        </div>
+                        <div class="blog-card__main">
+                           <ul class="blog-card__tags">
+                              <li class="blog-card__tag btn">
+                                 Wordpress
+                              </li>
+                           </ul>
+                           <div class="blog-card__title">Как начать работу</div>
+                           <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                              которое
+                              поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                           <div class="blog-card__footer">
+                              <div class="blog-card__date">26.06.2023</div>
+                              <a href="#" class="blog-card__link btn">Подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="blog-card">
+
+                        <div class="blog-card__image">
+                           <img src="img/static/blog/wp.png" alt="">
+                        </div>
+                        <div class="blog-card__main">
+                           <ul class="blog-card__tags">
+                              <li class="blog-card__tag btn">
+                                 Wordpress
+                              </li>
+                           </ul>
+                           <div class="blog-card__title">Как начать работу</div>
+                           <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                              которое
+                              поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                           <div class="blog-card__footer">
+                              <div class="blog-card__date">26.06.2023</div>
+                              <a href="#" class="blog-card__link btn">Подробнее</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+
+   </div>
    @@include('html/scripts.html', {})
 </body>
 

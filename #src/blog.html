@@ -5,1230 +5,1233 @@
 })
 
 <body>
-   @@include('html/header.html', {})
-   <main class="main">
-      <div class="breadcrumbs">
-         <div class="container">
-            <ul class="breadcrumbs__list">
-               <li>
-                  <a href="index.html" class="breadcrumbs__link">Главная</a>
-               </li>
-               <li>
-                  <a href="#" class="breadcrumbs__link">Публикации</a>
-               </li>
-            </ul>
+   <div class="wrapper">
 
-         </div>
-      </div>
-      <section class="blog-page">
-         <div class="container">
-            <div class="blog-page__wrapper">
-               <div class="blog-page__header">
-                  <h1 class="blog-page__title h2">Публикации</h1>
-                  <div class="swiper-tabs">
-                     <div class="swiper-tabs__container swiper blog-page__tabs">
-                        <div class="swiper-tabs__wrapper swiper-wrapper" id="services-tabs">
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab tab-active" data-tab-id="1">
-                                 <span class="swiper__tab-text tabs__tab-text">Все</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="2">
-                                 <span class="swiper__tab-text tabs__tab-text">Новости</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="3">
-                                 <span class="swiper__tab-text tabs__tab-text">Продвижение на маркетплейсах</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="4">
-                                 <span class="swiper__tab-text tabs__tab-text">Wordpress</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="5">
-                                 <span class="swiper__tab-text tabs__tab-text">Разработка и IT</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="6">
-                                 <span class="swiper__tab-text tabs__tab-text">SEO - продвижение</span>
-                              </button>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-tabs__btn-next swiper-button-next">
-                        <svg class="swiper-tabs__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
-                           xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M9.95671 5.7985C9.71427 5.79317 9.47619 5.86345 9.27558 5.99968C9.07496 6.1359 8.92178 6.33135 8.83732 6.55866C8.75286 6.78597 8.74133 7.03392 8.80432 7.26809C8.86731 7.50226 9.0017 7.7109 9.1888 7.86516L16.3278 13.981L9.1888 20.0948C9.05937 20.1899 8.95098 20.3107 8.87041 20.4496C8.78984 20.5886 8.73883 20.7427 8.72057 20.9023C8.70232 21.0619 8.71721 21.2235 8.76431 21.377C8.81141 21.5306 8.88971 21.6728 8.99431 21.7947C9.09891 21.9166 9.22755 22.0155 9.37218 22.0854C9.51681 22.1553 9.67431 22.1945 9.83481 22.2007C9.99532 22.2069 10.1554 22.18 10.305 22.1215C10.4545 22.0629 10.5904 21.9741 10.7041 21.8607L18.8776 14.8674C19.006 14.7579 19.109 14.6219 19.1797 14.4687C19.2504 14.3155 19.287 14.1487 19.287 13.98C19.287 13.8112 19.2504 13.6444 19.1797 13.4912C19.109 13.338 19.006 13.2019 18.8776 13.0924L10.7041 6.09239C10.4976 5.90899 10.2328 5.805 9.95671 5.7985Z" />
-                        </svg>
-                     </div>
-                  </div>
-               </div>
-               <div class="blog-page__main">
-                  <div class="cards__swiper swiper" id="service-swiper">
-                     <div class="cards__swiper-wrapper swiper-wrapper">
-                        <div class="swiper-slide blog-page__content" data-tab-id="1">
-                           <div class="blog-card">
+      @@include('html/header.html', {})
+      <main class="main">
+         <div class="breadcrumbs">
+            <div class="container">
+               <ul class="breadcrumbs__list">
+                  <li>
+                     <a href="index.html" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li>
+                     <a href="#" class="breadcrumbs__link">Публикации</a>
+                  </li>
+               </ul>
 
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide blog-page__content" data-tab-id="2">
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide blog-page__content" data-tab-id="3">
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide blog-page__content" data-tab-id="4">
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide blog-page__content" data-tab-id="5">
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide blog-page__content" data-tab-id="6">
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="blog-card">
-
-                              <div class="blog-card__image">
-                                 <img src="img/static/blog/wp.png" alt="">
-                              </div>
-                              <div class="blog-card__main">
-                                 <ul class="blog-card__tags">
-                                    <li class="blog-card__tag btn">
-                                       Wordpress
-                                    </li>
-                                 </ul>
-                                 <div class="blog-card__title">Как начать работу</div>
-                                 <p class="blog-card__description">WordPress — свободное программное обеспечение,
-                                    которое
-                                    поможет вам создать красивый сайт, блог или веб-приложение.</p>
-                                 <div class="blog-card__footer">
-                                    <div class="blog-card__date">26.06.2023</div>
-                                    <a href="#" class="blog-card__link btn">Подробнее</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="blog-page__pagination">
-                  <button class="blog-page__more btn">Показать еще</button>
-               </div>
             </div>
          </div>
-      </section>
-   </main>
-   @@include('html/footer.html', {})
+         <section class="blog-page">
+            <div class="container">
+               <div class="blog-page__wrapper">
+                  <div class="blog-page__header">
+                     <h1 class="blog-page__title h2">Публикации</h1>
+                     <div class="swiper-tabs">
+                        <div class="swiper-tabs__container swiper blog-page__tabs">
+                           <div class="swiper-tabs__wrapper swiper-wrapper" id="services-tabs">
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab tab-active" data-tab-id="1">
+                                    <span class="swiper__tab-text tabs__tab-text">Все</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="2">
+                                    <span class="swiper__tab-text tabs__tab-text">Новости</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="3">
+                                    <span class="swiper__tab-text tabs__tab-text">Продвижение на маркетплейсах</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="4">
+                                    <span class="swiper__tab-text tabs__tab-text">Wordpress</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="5">
+                                    <span class="swiper__tab-text tabs__tab-text">Разработка и IT</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="6">
+                                    <span class="swiper__tab-text tabs__tab-text">SEO - продвижение</span>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-tabs__btn-next swiper-button-next">
+                           <svg class="swiper-tabs__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M9.95671 5.7985C9.71427 5.79317 9.47619 5.86345 9.27558 5.99968C9.07496 6.1359 8.92178 6.33135 8.83732 6.55866C8.75286 6.78597 8.74133 7.03392 8.80432 7.26809C8.86731 7.50226 9.0017 7.7109 9.1888 7.86516L16.3278 13.981L9.1888 20.0948C9.05937 20.1899 8.95098 20.3107 8.87041 20.4496C8.78984 20.5886 8.73883 20.7427 8.72057 20.9023C8.70232 21.0619 8.71721 21.2235 8.76431 21.377C8.81141 21.5306 8.88971 21.6728 8.99431 21.7947C9.09891 21.9166 9.22755 22.0155 9.37218 22.0854C9.51681 22.1553 9.67431 22.1945 9.83481 22.2007C9.99532 22.2069 10.1554 22.18 10.305 22.1215C10.4545 22.0629 10.5904 21.9741 10.7041 21.8607L18.8776 14.8674C19.006 14.7579 19.109 14.6219 19.1797 14.4687C19.2504 14.3155 19.287 14.1487 19.287 13.98C19.287 13.8112 19.2504 13.6444 19.1797 13.4912C19.109 13.338 19.006 13.2019 18.8776 13.0924L10.7041 6.09239C10.4976 5.90899 10.2328 5.805 9.95671 5.7985Z" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-page__main">
+                     <div class="cards__swiper swiper" id="service-swiper">
+                        <div class="cards__swiper-wrapper swiper-wrapper">
+                           <div class="swiper-slide blog-page__content" data-tab-id="1">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide blog-page__content" data-tab-id="2">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide blog-page__content" data-tab-id="3">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide blog-page__content" data-tab-id="4">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide blog-page__content" data-tab-id="5">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide blog-page__content" data-tab-id="6">
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="blog-card">
+
+                                 <div class="blog-card__image">
+                                    <img src="img/static/blog/wp.png" alt="">
+                                 </div>
+                                 <div class="blog-card__main">
+                                    <ul class="blog-card__tags">
+                                       <li class="blog-card__tag btn">
+                                          Wordpress
+                                       </li>
+                                    </ul>
+                                    <div class="blog-card__title">Как начать работу</div>
+                                    <p class="blog-card__description">WordPress — свободное программное обеспечение,
+                                       которое
+                                       поможет вам создать красивый сайт, блог или веб-приложение.</p>
+                                    <div class="blog-card__footer">
+                                       <div class="blog-card__date">26.06.2023</div>
+                                       <a href="#" class="blog-card__link btn">Подробнее</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="blog-page__pagination">
+                     <button class="blog-page__more btn">Показать еще</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
    @@include('html/scripts.html', {})
 </body>
 

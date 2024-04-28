@@ -94,3 +94,26 @@
       flex-wrap: wrap;
    }
 }
+.footer__form-submit {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.hero__content-btn {
+   background-color: white;
+}
+@media (max-width: 568px) {
+   .hero__swiper-image {
+      height: 100%;
+   }
+   .hero__swiper-slide {
+      max-width: 230px;
+      max-height: unset;
+      height: auto;
+      video {
+         height: 100%;
+         max-width: unset;
+         object-fit: cover;
+      }
+   }
+}

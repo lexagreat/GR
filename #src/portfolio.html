@@ -5,223 +5,419 @@
 })
 
 <body>
-   @@include('html/header.html', {})
-   <main class="main">
-      <div class="breadcrumbs">
-         <div class="container">
-            <ul class="breadcrumbs__list">
-               <li>
-                  <a href="index.html" class="breadcrumbs__link">Главная</a>
-               </li>
-               <li>
-                  <a href="#" class="breadcrumbs__link">Создание и разработка сайтов</a>
-               </li>
-               <li>
-                  <a href="#" class="breadcrumbs__link">Создание и разработка сайтов</a>
-               </li>
-            </ul>
+   <div class="wrapper">
 
+      @@include('html/header.html', {})
+      <main class="main">
+         <div class="breadcrumbs">
+            <div class="container">
+               <ul class="breadcrumbs__list">
+                  <li>
+                     <a href="index.html" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li>
+                     <a href="#" class="breadcrumbs__link">Создание и разработка сайтов</a>
+                  </li>
+                  <li>
+                     <a href="#" class="breadcrumbs__link">Создание и разработка сайтов</a>
+                  </li>
+               </ul>
+
+            </div>
          </div>
-      </div>
-      <section class="portfolio-hero">
-         <div class="container">
-            <div class="portfolio-hero__wrapper">
-               <h1 class="portfolio-hero__title h1">Создание сайтов под ключ</h1>
-               <p class="portfolio-hero__description">Портфолио нашей команды по некоторым работам в веб-дизайне,
-                  вёрстке и разработке сайтов. </p>
-               <div class="services__content cards__content">
-                  <div class="swiper-tabs">
-                     <div class="swiper-tabs__container swiper">
-                        <div class="swiper-tabs__wrapper swiper-wrapper" id="services-tabs">
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab tab-active" data-tab-id="1">
+         <section class="portfolio-hero">
+            <div class="container">
+               <div class="portfolio-hero__wrapper">
+                  <h1 class="portfolio-hero__title h1">Создание сайтов под ключ</h1>
+                  <p class="portfolio-hero__description">Портфолио нашей команды по некоторым работам в веб-дизайне,
+                     вёрстке и разработке сайтов. </p>
+                  <div class="services__content cards__content">
+                     <div class="swiper-tabs">
+                        <div class="swiper-tabs__container swiper">
+                           <div class="swiper-tabs__wrapper swiper-wrapper" id="services-tabs">
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab tab-active" data-tab-id="1">
 
-                                 <span class="swiper__tab-text tabs__tab-text">Landing-page</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="2">
+                                    <span class="swiper__tab-text tabs__tab-text">Landing-page</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="2">
 
-                                 <span class="swiper__tab-text tabs__tab-text">Многостраничные и корпоративные
-                                    сайты</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="3">
+                                    <span class="swiper__tab-text tabs__tab-text">Многостраничные и корпоративные
+                                       сайты</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="3">
 
-                                 <span class="swiper__tab-text tabs__tab-text">Интернет-магазины</span>
-                              </button>
-                           </div>
-                           <div class="swiper-tabs__slide swiper-slide">
-                              <button class="swiper__tab" data-tab-id="4">
+                                    <span class="swiper__tab-text tabs__tab-text">Интернет-магазины</span>
+                                 </button>
+                              </div>
+                              <div class="swiper-tabs__slide swiper-slide">
+                                 <button class="swiper__tab" data-tab-id="4">
 
-                                 <span class="swiper__tab-text tabs__tab-text">Готовые решения</span>
-                              </button>
+                                    <span class="swiper__tab-text tabs__tab-text">Готовые решения</span>
+                                 </button>
+                              </div>
                            </div>
                         </div>
+                        <div class="swiper-tabs__btn-next swiper-button-next">
+                           <svg class="swiper-tabs__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M9.95671 5.7985C9.71427 5.79317 9.47619 5.86345 9.27558 5.99968C9.07496 6.1359 8.92178 6.33135 8.83732 6.55866C8.75286 6.78597 8.74133 7.03392 8.80432 7.26809C8.86731 7.50226 9.0017 7.7109 9.1888 7.86516L16.3278 13.981L9.1888 20.0948C9.05937 20.1899 8.95098 20.3107 8.87041 20.4496C8.78984 20.5886 8.73883 20.7427 8.72057 20.9023C8.70232 21.0619 8.71721 21.2235 8.76431 21.377C8.81141 21.5306 8.88971 21.6728 8.99431 21.7947C9.09891 21.9166 9.22755 22.0155 9.37218 22.0854C9.51681 22.1553 9.67431 22.1945 9.83481 22.2007C9.99532 22.2069 10.1554 22.18 10.305 22.1215C10.4545 22.0629 10.5904 21.9741 10.7041 21.8607L18.8776 14.8674C19.006 14.7579 19.109 14.6219 19.1797 14.4687C19.2504 14.3155 19.287 14.1487 19.287 13.98C19.287 13.8112 19.2504 13.6444 19.1797 13.4912C19.109 13.338 19.006 13.2019 18.8776 13.0924L10.7041 6.09239C10.4976 5.90899 10.2328 5.805 9.95671 5.7985Z" />
+                           </svg>
+                        </div>
                      </div>
-                     <div class="swiper-tabs__btn-next swiper-button-next">
-                        <svg class="swiper-tabs__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
-                           xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M9.95671 5.7985C9.71427 5.79317 9.47619 5.86345 9.27558 5.99968C9.07496 6.1359 8.92178 6.33135 8.83732 6.55866C8.75286 6.78597 8.74133 7.03392 8.80432 7.26809C8.86731 7.50226 9.0017 7.7109 9.1888 7.86516L16.3278 13.981L9.1888 20.0948C9.05937 20.1899 8.95098 20.3107 8.87041 20.4496C8.78984 20.5886 8.73883 20.7427 8.72057 20.9023C8.70232 21.0619 8.71721 21.2235 8.76431 21.377C8.81141 21.5306 8.88971 21.6728 8.99431 21.7947C9.09891 21.9166 9.22755 22.0155 9.37218 22.0854C9.51681 22.1553 9.67431 22.1945 9.83481 22.2007C9.99532 22.2069 10.1554 22.18 10.305 22.1215C10.4545 22.0629 10.5904 21.9741 10.7041 21.8607L18.8776 14.8674C19.006 14.7579 19.109 14.6219 19.1797 14.4687C19.2504 14.3155 19.287 14.1487 19.287 13.98C19.287 13.8112 19.2504 13.6444 19.1797 13.4912C19.109 13.338 19.006 13.2019 18.8776 13.0924L10.7041 6.09239C10.4976 5.90899 10.2328 5.805 9.95671 5.7985Z" />
-                        </svg>
-                     </div>
-                  </div>
 
-                  <div class="cards__swiper swiper" id="service-swiper">
-                     <div class="cards__swiper-wrapper swiper-wrapper">
-                        <div class="cards__swiper-slide swiper-slide" data-tab-id="1">
-                           <div class="portfolio-hero__swiper swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                     <div class="cards__swiper swiper" id="service-swiper">
+                        <div class="cards__swiper-wrapper swiper-wrapper">
+                           <div class="cards__swiper-slide swiper-slide" data-tab-id="1">
+                              <div class="portfolio-hero__swiper swiper">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
                                     </div>
                                  </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                 <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
+                                    <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <g clip-path="url(#clip0_68_6687)">
+                                          <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_68_6687">
+                                             <rect width="37.3198" height="30.2742" fill="white"
+                                                transform="translate(0.851318 0.791504)" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
 
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
                                  </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
+                                 <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
+                                    <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <g clip-path="url(#clip0_68_6687)">
+                                          <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_68_6687">
+                                             <rect width="37.3198" height="30.2742" fill="white"
+                                                transform="translate(0.851318 0.791504)" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
                                  </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
 
-                                          </a>
+                              </div>
+
+                           </div>
+                           <div class="cards__swiper-slide swiper-slide" data-tab-id="2">
+                              <div class="portfolio-hero__swiper swiper">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
+
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -259,952 +455,769 @@
                                        </clipPath>
                                     </defs>
                                  </svg>
-                              </div>
 
-                           </div>
-
-                        </div>
-                        <div class="cards__swiper-slide swiper-slide" data-tab-id="2">
-                           <div class="portfolio-hero__swiper swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
-                                       </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
                               </div>
                            </div>
-                           <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
+                           <div class="cards__swiper-slide swiper-slide" data-tab-id="3">
+                              <div class="portfolio-hero__swiper swiper">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                           </div>
-                           <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-
-                           </div>
-                        </div>
-                        <div class="cards__swiper-slide swiper-slide" data-tab-id="3">
-                           <div class="portfolio-hero__swiper swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
                                        </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
                                     </div>
                                  </div>
                               </div>
+                              <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
+                                 <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_6687)">
+                                       <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_68_6687">
+                                          <rect width="37.3198" height="30.2742" fill="white"
+                                             transform="translate(0.851318 0.791504)" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
+
+                              </div>
+                              <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
+                                 <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_6687)">
+                                       <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_68_6687">
+                                          <rect width="37.3198" height="30.2742" fill="white"
+                                             transform="translate(0.851318 0.791504)" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
+
+                              </div>
                            </div>
-                           <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
+                           <div class="cards__swiper-slide swiper-slide" data-tab-id="4">
+                              <div class="portfolio-hero__swiper swiper">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                           </div>
-                           <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
-
-                           </div>
-                        </div>
-                        <div class="cards__swiper-slide swiper-slide" data-tab-id="4">
-                           <div class="portfolio-hero__swiper swiper">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
-
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
                                        </div>
                                     </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide portfolio-slide">
-                                    <div class="portfolio-slide__front">
-                                       <p class="portfolio-slide__description">
-                                          Разработка сайта для строительной компании, с последующей интеграцией с Amo
-                                          CRM
-                                       </p>
-                                       <div class="portfolio-slide__footer">
-                                          <a href="#" class="portfolio-slide__title">
-                                             atomatik.ru
-                                          </a>
-                                          <a href="#" class="portfolio-slide__link">
-                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                   d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
-                                                   fill="#151515" />
-                                             </svg>
+                                    <div class="swiper-slide portfolio-slide">
+                                       <div class="portfolio-slide__front">
+                                          <p class="portfolio-slide__description">
+                                             Разработка сайта для строительной компании, с последующей интеграцией с Amo
+                                             CRM
+                                          </p>
+                                          <div class="portfolio-slide__footer">
+                                             <a href="#" class="portfolio-slide__title">
+                                                atomatik.ru
+                                             </a>
+                                             <a href="#" class="portfolio-slide__link">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="M11.6707 3.97604L1.64679 14L0 12.3532L10.0228 2.32926H1.18909V0H14V12.8109H11.6707V3.97604Z"
+                                                      fill="#151515" />
+                                                </svg>
 
-                                          </a>
+                                             </a>
+                                          </div>
                                        </div>
-                                    </div>
-                                    <div class="portfolio-slide__image">
-                                       <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       <div class="portfolio-slide__image">
+                                          <img src="img/static/portfolio/portfolio-item.png" alt="">
+                                       </div>
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
+                              <div class="swiper-button-prev portfolio-hero__nav portfolio-hero__nav_prev">
+                                 <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_6687)">
+                                       <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_68_6687">
+                                          <rect width="37.3198" height="30.2742" fill="white"
+                                             transform="translate(0.851318 0.791504)" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
 
-                           </div>
-                           <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
-                              <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <g clip-path="url(#clip0_68_6687)">
-                                    <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
-                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
-                                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                 </g>
-                                 <defs>
-                                    <clipPath id="clip0_68_6687">
-                                       <rect width="37.3198" height="30.2742" fill="white"
-                                          transform="translate(0.851318 0.791504)" />
-                                    </clipPath>
-                                 </defs>
-                              </svg>
+                              </div>
+                              <div class="swiper-button-next portfolio-hero__nav portfolio-hero__nav_next">
+                                 <svg width="39" height="32" viewBox="0 0 39 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_68_6687)">
+                                       <path d="M0.851318 15.9287L34.5595 15.9287" stroke="black" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M28.5403 7.09863L36.9673 15.9286L28.5403 24.7586" stroke="black"
+                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                       <clipPath id="clip0_68_6687">
+                                          <rect width="37.3198" height="30.2742" fill="white"
+                                             transform="translate(0.851318 0.791504)" />
+                                       </clipPath>
+                                    </defs>
+                                 </svg>
 
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <section class="portfolio-preferences">
-         <div class="container">
-            <div class="portfolio-preferences__wrapper">
-               <div class="portfolio-preferences__item">
-                  <div class="portfolio-preferences__image">
-                     <img src="img/static/portfolio/pref1.png" alt="">
-                  </div>
-                  <div class="portfolio-preferences__main">
-                     <h3 class="portfolio-preferences__title h3">Почему бизнесу нужен сайт</h3>
-                     <div class="portfolio-preferences__description">
-                        <p>
-                           Сайт для вашего бизнеса необходим для привлечения новых клиентов, расширения географии,
-                           увеличения доверия, эффективной рекламы и круглосуточной доступности. Сайт у бизнеса является
-                           визитной карточкой в интернете, позволяет привлекать клиентов со всего мира, создает
-                           впечатление
-                           надежности и профессионализма, обеспечивает эффективную рекламу через интернет-маркетинг и
-                           доступен 24/7 для получения информации о вашей компании в любое время дня и ночи.
-                        </p>
+         </section>
+         <section class="portfolio-preferences">
+            <div class="container">
+               <div class="portfolio-preferences__wrapper">
+                  <div class="portfolio-preferences__item">
+                     <div class="portfolio-preferences__image">
+                        <img src="img/static/portfolio/pref1.png" alt="">
+                     </div>
+                     <div class="portfolio-preferences__main">
+                        <h3 class="portfolio-preferences__title h3">Почему бизнесу нужен сайт</h3>
+                        <div class="portfolio-preferences__description">
+                           <p>
+                              Сайт для вашего бизнеса необходим для привлечения новых клиентов, расширения географии,
+                              увеличения доверия, эффективной рекламы и круглосуточной доступности. Сайт у бизнеса
+                              является
+                              визитной карточкой в интернете, позволяет привлекать клиентов со всего мира, создает
+                              впечатление
+                              надежности и профессионализма, обеспечивает эффективную рекламу через интернет-маркетинг и
+                              доступен 24/7 для получения информации о вашей компании в любое время дня и ночи.
+                           </p>
 
-                        <p>
-                           Мы готовы помочь вам в создании сайта любого типа. От лендинга до мультифункциональных
-                           информационных порталов.
-                        </p>
-                     </div>
+                           <p>
+                              Мы готовы помочь вам в создании сайта любого типа. От лендинга до мультифункциональных
+                              информационных порталов.
+                           </p>
+                        </div>
 
+                     </div>
                   </div>
-               </div>
-               <div class="portfolio-preferences__item">
-                  <div class="portfolio-preferences__image">
-                     <img src="img/static/portfolio/pref2.png" alt="">
-                  </div>
-                  <div class="portfolio-preferences__main">
-                     <h3 class="portfolio-preferences__title h3">Создаем сайты, не отвлекая вас от бизнеса</h3>
-                     <div class="portfolio-preferences__description">
-                        <p>
-                           Мы создаем стильные и функциональные сайты по доступным ценам, делая процесс максимально
-                           удобным
-                           для наших клиентов. Мы ценим ваше время, поэтому предлагаем удаленную работу, что позволяет
-                           сэкономить время и усилия. Наша команда стремится к прозрачности и честности во всех
-                           вопросах,
-                           чтобы вы могли быть уверены в качестве наших услуг.
-                        </p>
+                  <div class="portfolio-preferences__item">
+                     <div class="portfolio-preferences__image">
+                        <img src="img/static/portfolio/pref2.png" alt="">
                      </div>
-                     <button class="portfolio-preferences__btn btn">Оставить заявку</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="clients">
-         <div class="clients__container container">
-            <div class="clients__head">
-               <h2 class="clients__title section-title">
-                  Обратная связь от <span class="clients__title-icon">
-                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M35.4564 6.76248C33.5424 4.87088 30.9599 3.81006 28.2689 3.81006C25.5779 3.81006 22.9954 4.87088 21.0814 6.76248L20.0001 7.81873L18.9376 6.76248C17.004 4.99579 14.4636 4.0428 11.8451 4.10184C9.22654 4.16088 6.73165 5.2274 4.87961 7.07944C3.02756 8.93148 1.96104 11.4264 1.902 14.0449C1.84296 16.6634 2.79595 19.2038 4.56264 21.1375L19.3376 35.95C19.5142 36.124 19.7522 36.2216 20.0001 36.2216C20.2481 36.2216 20.4861 36.124 20.6626 35.95L35.4564 21.1562C37.3537 19.2414 38.4181 16.6549 38.4181 13.9593C38.4181 11.2638 37.3537 8.67726 35.4564 6.76248Z" />
-                     </svg>
-                  </span> любимых клиентов
-               </h2>
-            </div>
-            <div class="clients__swiper-container">
-               <div class="clients__swiper swiper">
-                  <div class="clients__swiper-wrapper swiper-wrapper">
-                     <div class="clients__swiper-slide swiper-slide">
-                        <div class="clients__swiper-slide-container">
-                           <div class="clients__swiper-img">
-                              <img src="img/static/clients/1.png" alt="">
-                           </div>
-                           <div class="clients__content">
-                              <div class="clients__content-head">
-                                 <p class="clients__content-title">Светлана</p>
-                                 <div class="clients__content-subtitle">Предприниматель</div>
-                                 <ul class="clients__content-grade">
-                                    <li class="clients__content-grade-item">
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
-                                       </svg>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
-                                 нужно
-                                 пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
-                                 собраны
-                                 коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
-                              </p>
-                              <span class="clients__content-date">3 дня назад</span>
-                           </div>
+                     <div class="portfolio-preferences__main">
+                        <h3 class="portfolio-preferences__title h3">Создаем сайты, не отвлекая вас от бизнеса</h3>
+                        <div class="portfolio-preferences__description">
+                           <p>
+                              Мы создаем стильные и функциональные сайты по доступным ценам, делая процесс максимально
+                              удобным
+                              для наших клиентов. Мы ценим ваше время, поэтому предлагаем удаленную работу, что
+                              позволяет
+                              сэкономить время и усилия. Наша команда стремится к прозрачности и честности во всех
+                              вопросах,
+                              чтобы вы могли быть уверены в качестве наших услуг.
+                           </p>
                         </div>
-                     </div>
-                     <div class="clients__swiper-slide swiper-slide">
-                        <div class="clients__swiper-slide-container">
-                           <div class="clients__swiper-img">
-                              <img src="img/static/clients/1.png" alt="">
-                           </div>
-                           <div class="clients__content">
-                              <div class="clients__content-head">
-                                 <p class="clients__content-title">Светлана</p>
-                                 <div class="clients__content-subtitle">Предприниматель</div>
-                                 <ul class="clients__content-grade">
-                                    <li class="clients__content-grade-item">
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
-                                       </svg>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
-                                 нужно
-                                 пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
-                                 собраны
-                                 коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
-                              </p>
-                              <span class="clients__content-date">3 дня назад</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="clients__swiper-slide swiper-slide">
-                        <div class="clients__swiper-slide-container">
-                           <div class="clients__swiper-img">
-                              <img src="img/static/clients/1.png" alt="">
-                           </div>
-                           <div class="clients__content">
-                              <div class="clients__content-head">
-                                 <p class="clients__content-title">Светлана</p>
-                                 <div class="clients__content-subtitle">Предприниматель</div>
-                                 <ul class="clients__content-grade">
-                                    <li class="clients__content-grade-item">
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
-                                       </svg>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
-                                 нужно
-                                 пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
-                                 собраны
-                                 коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
-                              </p>
-                              <span class="clients__content-date">3 дня назад</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="clients__swiper-slide swiper-slide">
-                        <div class="clients__swiper-slide-container">
-                           <div class="clients__swiper-img">
-                              <img src="img/static/clients/1.png" alt="">
-                           </div>
-                           <div class="clients__content">
-                              <div class="clients__content-head">
-                                 <p class="clients__content-title">Светлана</p>
-                                 <div class="clients__content-subtitle">Предприниматель</div>
-                                 <ul class="clients__content-grade">
-                                    <li class="clients__content-grade-item">
-
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
-                                       </svg>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
-                                 нужно
-                                 пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
-                                 собраны
-                                 коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
-                              </p>
-                              <span class="clients__content-date">3 дня назад</span>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="clients__swiper-slide swiper-slide">
-                        <div class="clients__swiper-slide-container">
-                           <div class="clients__swiper-img">
-                              <img src="img/static/clients/1.png" alt="">
-                           </div>
-                           <div class="clients__content">
-                              <div class="clients__content-head">
-                                 <p class="clients__content-title">Светлана</p>
-                                 <div class="clients__content-subtitle">Предприниматель</div>
-                                 <ul class="clients__content-grade">
-                                    <li class="clients__content-grade-item">
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
-                                       </svg>
-                                    </li>
-                                 </ul>
-                              </div>
-                              <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
-                                 нужно
-                                 пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
-                                 собраны
-                                 коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
-                              </p>
-                              <span class="clients__content-date">3 дня назад</span>
-                           </div>
-                        </div>
+                        <button class="portfolio-preferences__btn btn">Оставить заявку</button>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="clients__nav">
-               <div class="clients__nav-pagination swiper-pagination"></div>
-               <div class="clients__pagination">
-                  <div class="clients__nav-prev swiper-button-prev">
-                     <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M6.85654 6.14343L7.97012 7.25706L3.01472 12.2125H25V13.7874H3.01472L7.97012 18.7428L6.85654 19.8565L0 12.9999L6.85654 6.14343Z" />
-                     </svg>
+         </section>
+         <section class="clients">
+            <div class="clients__container container">
+               <div class="clients__head">
+                  <h2 class="clients__title section-title">
+                     Обратная связь от <span class="clients__title-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M35.4564 6.76248C33.5424 4.87088 30.9599 3.81006 28.2689 3.81006C25.5779 3.81006 22.9954 4.87088 21.0814 6.76248L20.0001 7.81873L18.9376 6.76248C17.004 4.99579 14.4636 4.0428 11.8451 4.10184C9.22654 4.16088 6.73165 5.2274 4.87961 7.07944C3.02756 8.93148 1.96104 11.4264 1.902 14.0449C1.84296 16.6634 2.79595 19.2038 4.56264 21.1375L19.3376 35.95C19.5142 36.124 19.7522 36.2216 20.0001 36.2216C20.2481 36.2216 20.4861 36.124 20.6626 35.95L35.4564 21.1562C37.3537 19.2414 38.4181 16.6549 38.4181 13.9593C38.4181 11.2638 37.3537 8.67726 35.4564 6.76248Z" />
+                        </svg>
+                     </span> любимых клиентов
+                  </h2>
+               </div>
+               <div class="clients__swiper-container">
+                  <div class="clients__swiper swiper">
+                     <div class="clients__swiper-wrapper swiper-wrapper">
+                        <div class="clients__swiper-slide swiper-slide">
+                           <div class="clients__swiper-slide-container">
+                              <div class="clients__swiper-img">
+                                 <img src="img/static/clients/1.png" alt="">
+                              </div>
+                              <div class="clients__content">
+                                 <div class="clients__content-head">
+                                    <p class="clients__content-title">Светлана</p>
+                                    <div class="clients__content-subtitle">Предприниматель</div>
+                                    <ul class="clients__content-grade">
+                                       <li class="clients__content-grade-item">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
+                                          </svg>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
+                                    нужно
+                                    пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
+                                    собраны
+                                    коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
+                                 </p>
+                                 <span class="clients__content-date">3 дня назад</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clients__swiper-slide swiper-slide">
+                           <div class="clients__swiper-slide-container">
+                              <div class="clients__swiper-img">
+                                 <img src="img/static/clients/1.png" alt="">
+                              </div>
+                              <div class="clients__content">
+                                 <div class="clients__content-head">
+                                    <p class="clients__content-title">Светлана</p>
+                                    <div class="clients__content-subtitle">Предприниматель</div>
+                                    <ul class="clients__content-grade">
+                                       <li class="clients__content-grade-item">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
+                                          </svg>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
+                                    нужно
+                                    пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
+                                    собраны
+                                    коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
+                                 </p>
+                                 <span class="clients__content-date">3 дня назад</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clients__swiper-slide swiper-slide">
+                           <div class="clients__swiper-slide-container">
+                              <div class="clients__swiper-img">
+                                 <img src="img/static/clients/1.png" alt="">
+                              </div>
+                              <div class="clients__content">
+                                 <div class="clients__content-head">
+                                    <p class="clients__content-title">Светлана</p>
+                                    <div class="clients__content-subtitle">Предприниматель</div>
+                                    <ul class="clients__content-grade">
+                                       <li class="clients__content-grade-item">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
+                                          </svg>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
+                                    нужно
+                                    пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
+                                    собраны
+                                    коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
+                                 </p>
+                                 <span class="clients__content-date">3 дня назад</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clients__swiper-slide swiper-slide">
+                           <div class="clients__swiper-slide-container">
+                              <div class="clients__swiper-img">
+                                 <img src="img/static/clients/1.png" alt="">
+                              </div>
+                              <div class="clients__content">
+                                 <div class="clients__content-head">
+                                    <p class="clients__content-title">Светлана</p>
+                                    <div class="clients__content-subtitle">Предприниматель</div>
+                                    <ul class="clients__content-grade">
+                                       <li class="clients__content-grade-item">
+
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
+                                          </svg>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
+                                    нужно
+                                    пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
+                                    собраны
+                                    коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
+                                 </p>
+                                 <span class="clients__content-date">3 дня назад</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clients__swiper-slide swiper-slide">
+                           <div class="clients__swiper-slide-container">
+                              <div class="clients__swiper-img">
+                                 <img src="img/static/clients/1.png" alt="">
+                              </div>
+                              <div class="clients__content">
+                                 <div class="clients__content-head">
+                                    <p class="clients__content-title">Светлана</p>
+                                    <div class="clients__content-subtitle">Предприниматель</div>
+                                    <ul class="clients__content-grade">
+                                       <li class="clients__content-grade-item">
+                                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M17.7277 3.38124C16.7707 2.43544 15.4795 1.90503 14.134 1.90503C12.7885 1.90503 11.4972 2.43544 10.5402 3.38124L9.99958 3.90936L9.46833 3.38124C8.50151 2.49789 7.2313 2.0214 5.92204 2.05092C4.61278 2.08044 3.36533 2.6137 2.43931 3.53972C1.51329 4.46574 0.980033 5.71319 0.950513 7.02245C0.920993 8.33171 1.39749 9.60192 2.28083 10.5687L9.66833 17.975C9.75662 18.062 9.87561 18.1108 9.99958 18.1108C10.1236 18.1108 10.2425 18.062 10.3308 17.975L17.7277 10.5781C18.6763 9.62072 19.2086 8.32746 19.2086 6.97967C19.2086 5.63189 18.6763 4.33863 17.7277 3.38124Z" />
+                                          </svg>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <p class="clients__content-text">Офис необычный, просторный, но чтобы попасть внутрь
+                                    нужно
+                                    пройти целый квест. Так как Тема любит все коллекционировать, в разных местах
+                                    собраны
+                                    коллекции: старых компьютеров, на которых работали сотрудники когда-то, печатных.
+                                 </p>
+                                 <span class="clients__content-date">3 дня назад</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="clients__nav-next swiper-button-next">
-                     <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M6.85654 6.14343L7.97012 7.25706L3.01472 12.2125H25V13.7874H3.01472L7.97012 18.7428L6.85654 19.8565L0 12.9999L6.85654 6.14343Z" />
-                     </svg>
+               </div>
+               <div class="clients__nav">
+                  <div class="clients__nav-pagination swiper-pagination"></div>
+                  <div class="clients__pagination">
+                     <div class="clients__nav-prev swiper-button-prev">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M6.85654 6.14343L7.97012 7.25706L3.01472 12.2125H25V13.7874H3.01472L7.97012 18.7428L6.85654 19.8565L0 12.9999L6.85654 6.14343Z" />
+                        </svg>
+                     </div>
+                     <div class="clients__nav-next swiper-button-next">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M6.85654 6.14343L7.97012 7.25706L3.01472 12.2125H25V13.7874H3.01472L7.97012 18.7428L6.85654 19.8565L0 12.9999L6.85654 6.14343Z" />
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <section class="portfolio-banner">
-         <div class="container">
-            <div class="portfolio-banner__wrapper">
-               <h4 class="portfolio-banner__title h2">
-                  Получите скидку в 10 000 руб.
-                  <span>на создание сайта</span>
-               </h4>
-               <p class="portfolio-banner__text">
-                  Оставьте заявку, зафиксируйте за собой скидку, а после мы свяжемся с вами в ближайшее время
-               </p>
-               <button class="portfolio-banner__btn btn">
-                  Оставить заявку
-               </button>
+         </section>
+         <section class="portfolio-banner">
+            <div class="container">
+               <div class="portfolio-banner__wrapper">
+                  <h4 class="portfolio-banner__title h2">
+                     Получите скидку в 10 000 руб.
+                     <span>на создание сайта</span>
+                  </h4>
+                  <p class="portfolio-banner__text">
+                     Оставьте заявку, зафиксируйте за собой скидку, а после мы свяжемся с вами в ближайшее время
+                  </p>
+                  <button class="portfolio-banner__btn btn">
+                     Оставить заявку
+                  </button>
+               </div>
             </div>
-         </div>
-      </section>
-      <section class="portfolio-faq">
-         <div class="container">
-            <div class="portfolio-faq__wrapper">
-               <h2 class="portfolio-faq__title h2">Ответы на вопросы</h2>
-               <ul class="portfolio-faq__list">
-                  <li class="portfolio-faq__item faq-item">
-                     <div class="faq-item__header">
-                        <div class="faq-item__index">01</div>
-                        <div class="faq-item__main">
-                           <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
-                           <div class="faq-item__btn">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
-                                    fill="black" />
-                              </svg>
+         </section>
+         <section class="portfolio-faq">
+            <div class="container">
+               <div class="portfolio-faq__wrapper">
+                  <h2 class="portfolio-faq__title h2">Ответы на вопросы</h2>
+                  <ul class="portfolio-faq__list">
+                     <li class="portfolio-faq__item faq-item">
+                        <div class="faq-item__header">
+                           <div class="faq-item__index">01</div>
+                           <div class="faq-item__main">
+                              <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
+                              <div class="faq-item__btn">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
+                                       fill="black" />
+                                 </svg>
 
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="faq-item__spoiler collapse">
-                        <div class="faq-item__text">
-                           CMS (система управления контентом) — это программное обеспечение, которое позволяет управлять
-                           контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
-                           редактирования и удаления контента, а также позволяет настраивать дизайн и функциональность
-                           сайта
-                        </div>
-                     </div>
-                  </li>
-                  <li class="portfolio-faq__item faq-item">
-                     <div class="faq-item__header">
-                        <div class="faq-item__index">01</div>
-                        <div class="faq-item__main">
-                           <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
-                           <div class="faq-item__btn">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
-                                    fill="black" />
-                              </svg>
-
+                        <div class="faq-item__spoiler collapse">
+                           <div class="faq-item__text">
+                              CMS (система управления контентом) — это программное обеспечение, которое позволяет
+                              управлять
+                              контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
+                              редактирования и удаления контента, а также позволяет настраивать дизайн и
+                              функциональность
+                              сайта
                            </div>
                         </div>
-                     </div>
-                     <div class="faq-item__spoiler collapse">
-                        <div class="faq-item__text">
-                           CMS (система управления контентом) — это программное обеспечение, которое позволяет управлять
-                           контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
-                           редактирования и удаления контента, а также позволяет настраивать дизайн и функциональность
-                           сайта
-                        </div>
-                     </div>
-                  </li>
-                  <li class="portfolio-faq__item faq-item">
-                     <div class="faq-item__header">
-                        <div class="faq-item__index">01</div>
-                        <div class="faq-item__main">
-                           <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
-                           <div class="faq-item__btn">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
-                                    fill="black" />
-                              </svg>
+                     </li>
+                     <li class="portfolio-faq__item faq-item">
+                        <div class="faq-item__header">
+                           <div class="faq-item__index">01</div>
+                           <div class="faq-item__main">
+                              <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
+                              <div class="faq-item__btn">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
+                                       fill="black" />
+                                 </svg>
 
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="faq-item__spoiler collapse">
-                        <div class="faq-item__text">
-                           CMS (система управления контентом) — это программное обеспечение, которое позволяет управлять
-                           контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
-                           редактирования и удаления контента, а также позволяет настраивать дизайн и функциональность
-                           сайта
-                        </div>
-                     </div>
-                  </li>
-                  <li class="portfolio-faq__item faq-item">
-                     <div class="faq-item__header">
-                        <div class="faq-item__index">01</div>
-                        <div class="faq-item__main">
-                           <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
-                           <div class="faq-item__btn">
-                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
-                                    fill="black" />
-                              </svg>
-
+                        <div class="faq-item__spoiler collapse">
+                           <div class="faq-item__text">
+                              CMS (система управления контентом) — это программное обеспечение, которое позволяет
+                              управлять
+                              контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
+                              редактирования и удаления контента, а также позволяет настраивать дизайн и
+                              функциональность
+                              сайта
                            </div>
                         </div>
-                     </div>
-                     <div class="faq-item__spoiler collapse">
-                        <div class="faq-item__text">
-                           CMS (система управления контентом) — это программное обеспечение, которое позволяет управлять
-                           контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
-                           редактирования и удаления контента, а также позволяет настраивать дизайн и функциональность
-                           сайта
+                     </li>
+                     <li class="portfolio-faq__item faq-item">
+                        <div class="faq-item__header">
+                           <div class="faq-item__index">01</div>
+                           <div class="faq-item__main">
+                              <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
+                              <div class="faq-item__btn">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
+                                       fill="black" />
+                                 </svg>
+
+                              </div>
+                           </div>
                         </div>
-                     </div>
-                  </li>
-               </ul>
+                        <div class="faq-item__spoiler collapse">
+                           <div class="faq-item__text">
+                              CMS (система управления контентом) — это программное обеспечение, которое позволяет
+                              управлять
+                              контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
+                              редактирования и удаления контента, а также позволяет настраивать дизайн и
+                              функциональность
+                              сайта
+                           </div>
+                        </div>
+                     </li>
+                     <li class="portfolio-faq__item faq-item">
+                        <div class="faq-item__header">
+                           <div class="faq-item__index">01</div>
+                           <div class="faq-item__main">
+                              <h4 class="faq-item__title">Что такое CMS и зачем она нужна?</h4>
+                              <div class="faq-item__btn">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M8 0.00195312H6V6.00195H0V8.00195H6V14.002H8V8.00195H14V6.00195H8V0.00195312Z"
+                                       fill="black" />
+                                 </svg>
+
+                              </div>
+                           </div>
+                        </div>
+                        <div class="faq-item__spoiler collapse">
+                           <div class="faq-item__text">
+                              CMS (система управления контентом) — это программное обеспечение, которое позволяет
+                              управлять
+                              контентом на сайте без необходимости написания кода. CMS упрощает процесс добавления,
+                              редактирования и удаления контента, а также позволяет настраивать дизайн и
+                              функциональность
+                              сайта
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
-      </section>
-   </main>
-   @@include('html/footer.html', {})
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
    @@include('html/scripts.html', {})
 </body>
 

@@ -1,0 +1,138 @@
+.modal {
+   z-index: 100;
+   &__content {
+   }
+   &__close {
+      cursor: pointer;
+      &::after,
+      &::before {
+         display: none;
+      }
+   }
+}
+.shared-modal {
+   &__content {
+      padding: 30px;
+      width: 476px;
+   }
+   @media (max-width: 568px) {
+      &__content {
+         width: calc(100% - 24px);
+         padding: 12px;
+      }
+   }
+}
+.consult-modal {
+   &__content {
+      padding-top: 70px;
+      @media (max-width: 568px) {
+         padding-top: 50px;
+      }
+   }
+
+   &__close {
+      width: unset;
+      height: unset;
+      right: 30px;
+      top: 30px;
+   }
+
+   &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+   }
+
+   &__title {
+      font-family: "Stolzl", sans-serif;
+      font-size: 29px;
+      line-height: calc(35 / 29);
+      color: #151515;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+   }
+
+   &__list {
+   }
+
+   &__input {
+      height: 61px;
+      border-radius: 38px;
+      border: 1px solid #151515;
+      padding-left: 30px;
+      font-size: 16px;
+      color: #151515;
+      font-weight: 500;
+      width: 100%;
+      &::placeholder {
+         font-size: 16px;
+         font-weight: 400;
+         color: #151515;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+      background-color: #195aff;
+      font-size: 20px;
+      color: white;
+      height: 64px;
+   }
+
+   &__text {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 12px;
+      line-height: calc(16 / 12);
+      color: #858585;
+      a {
+         border-bottom: 1px solid #858585;
+      }
+   }
+}
+.modal {
+   &__content {
+   }
+
+   &__close {
+   }
+}
+.thanks-modal {
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+   }
+
+   &__icon {
+   }
+
+   &__title {
+      font-family: "Stolzl", sans-serif;
+      font-size: 29px;
+      line-height: cacl(35 / 29);
+      color: #151515;
+   }
+
+   &__subtitle {
+      font-family: "TT Norms Pro", sans-serif;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: #858585;
+   }
+
+   &__close {
+      border: 1px solid #195aff;
+      color: #195aff;
+      height: 45px;
+      padding-left: 24px;
+      padding-right: 24px;
+      font-size: 18px;
+      position: relative;
+      top: unset;
+      right: unset;
+   }
+}
